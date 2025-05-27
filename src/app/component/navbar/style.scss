@@ -1,0 +1,30 @@
+/* Existing styles can remain */
+
+header {
+  z-index: 99;
+  
+.active-nav-item {
+  position: relative;
+  color: #7c3aed; /* Purple-700 */
+  font-weight: 700;
+}
+
+.active-nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #7c3aed, #ec4899, #f87171);
+  border-radius: 2px;
+}
+
+/* Smooth width transition for mobile menu */
+.fixed {
+  transition-property: width;
+  transition-timing-function: ease-in-out;
+  transition-duration: 300ms;
+}
+
+}
