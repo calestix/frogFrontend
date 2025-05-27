@@ -12,7 +12,7 @@ export default function Banner() {
     <section className="relative w-full h-screen overflow-hidden">
       {/* Background Video */}
       <video
-        src="/home.mp4"
+        src="/home2.mp4"
         autoPlay
         muted
         loop

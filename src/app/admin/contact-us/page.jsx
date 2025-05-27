@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { faker } from "@faker-js/faker";
 import { Switch } from "@headlessui/react";
 import Pagination from "../../component/Pagination";
 import { useRouter } from "next/navigation";
