@@ -35,7 +35,6 @@ const AdminLogin = () => {
 
     return (
         <>
-            <Navbar />
             <div className="min-h-screen flex items-center justify-center main-bg p-6">
                 <div className="bg-white/50 backdrop-blur-md rounded-2xl shadow-xl p-8 w-full max-w-md ">
                     <h2 className="text-2xl font-bold mb-6 text-center text-purple-700">Admin Login</h2>
@@ -82,7 +81,6 @@ const AdminLogin = () => {
                     </Formik>
                 </div>
             </div>
-         
         </>
     );
 };
