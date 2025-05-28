@@ -18,8 +18,9 @@
   }
 }
 body {
-  background: url("/bg1.jpg");
+  background: url("/bg2.jpg");
   background-repeat: repeat;
+  background-position: center;
   color: var(--foreground);
   font-family: "Poppins", sans-serif;
 }
