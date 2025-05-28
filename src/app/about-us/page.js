@@ -40,6 +40,22 @@ export default function AboutUs() {
             </div>
           </div>
 
+          {/* Mission */}
+          <div>
+            <h3 className="text-2xl font-semibold mb-2">
+              {content[0].mission.title}
+            </h3>
+            <p>{content[0].mission.paragraph}</p>
+          </div>
+
+          {/* Vision */}
+          <div>
+            <h3 className="text-2xl font-semibold mb-2">
+              {content[0].vision.title}
+            </h3>
+            <p>{content[0].vision.paragraph}</p>
+          </div>
+
           {/* Services */}
           <div>
             <h3 className="text-2xl font-semibold mb-4">

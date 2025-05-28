@@ -215,26 +215,42 @@
       },
       "overview": {
         "paragraphs": [
-          "Welcome to FORGE T&C EST, your trusted partner in delivering high-quality solutions across construction, engineering, and technical services. We are committed to excellence, customer satisfaction, and long-term value.",
-          "With a team of experienced professionals and a vision to lead through innovation, we provide reliable services that meet the evolving needs of our clients."
+          "Welcome to FORGE T&C EST — your reliable partner in construction, engineering, interior design, electrical and mechanical works, and general maintenance solutions. We are driven by a core commitment to quality, safety, and sustainability, delivering value that lasts for generations.",
+          "Since our inception, we have consistently delivered high-performing, efficient, and aesthetically superior projects. Our diverse portfolio ranges from civil and structural construction to turnkey interior fit-outs, MEP installations, solar energy systems, and long-term maintenance services.",
+          "Backed by a multidisciplinary team of seasoned professionals, engineers, and technicians, we blend technical excellence with creative problem-solving to meet the most complex client requirements. We believe in forming long-term partnerships and growing with the evolving needs of our clients and communities."
         ]
+      },
+      "mission": {
+        "title": "Our Mission",
+        "paragraph": "To provide exceptional engineering, construction, interior, and maintenance services through cutting-edge solutions, expert workforce, and a relentless focus on quality, safety, and client satisfaction."
+      },
+      "vision": {
+        "title": "Our Vision",
+        "paragraph": "To be a leader in the Middle East’s construction and technical services sector, recognized for innovation, reliability, and creating transformative spaces that stand the test of time."
       },
       "services": {
         "title": "Our Services",
         "items": [
-          "Construction & Renovation",
+          "Building & Structural Construction",
+          "Civil Engineering Works",
+          "Renovation & Remodeling",
           "Electrical & Mechanical Installations",
-          "Project Management & Consultancy",
+          "HVAC & Fire Safety Systems",
+          "Plumbing & Gas Systems",
+          "Solar & Renewable Energy Solutions",
           "Interior Design & Fit-Out",
-          "General Maintenance & Technical Services"
+          "Custom Joinery & Finishing Works",
+          "General Maintenance & Technical Services",
+          "Project Management & Consultancy"
         ]
       },
       "ceo": {
         "title": "About Our CEO",
         "name": "[CEO’s Name]",
         "paragraphs": [
-          "[CEO’s Name] is the visionary behind our company, bringing over +20 years of industry experience in civil engineering and project leadership. With a deep understanding of both client needs and technical execution, he has led our growth with integrity, innovation, and excellence.",
-          "Under his leadership, we have become a trusted name across the industry, delivering exceptional results and building strong client relationships."
+          "[CEO’s Name] is the visionary leader behind FORGE T&C EST. With over two decades of expertise in civil engineering, infrastructure development, and multidisciplinary project execution, he has cultivated a culture of integrity, precision, and excellence across all company operations.",
+          "His leadership philosophy centers around client trust, team empowerment, and continuous improvement. Under his guidance, the company has expanded its capabilities across multiple verticals, gained the trust of leading clients, and delivered iconic projects that reflect both technical excellence and human-centered design.",
+          "Through a clear vision and strategic planning, he continues to lead the company toward growth, innovation, and operational excellence, setting new benchmarks in quality and customer satisfaction."
         ]
       }
     }
