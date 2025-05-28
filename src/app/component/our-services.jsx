@@ -8,7 +8,7 @@ function OurServices() {
   const lang = dict;
   const text = dict.OurServicesDes;
   return (
-    <div className="text-center py-18 px-20">
+    <div className="text-center py-18 md:px-20 px-5">
       <div className="flex justify-center">
         <h3 className="heading">{lang.ourServices}</h3>
       </div>

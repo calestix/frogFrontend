@@ -7,7 +7,7 @@ function Location() {
   const dict = getDictionary(locale);
   const lang = dict;
   return (
-    <div className="text-center py-18 px-20">
+    <div className="text-center py-18 md:px-20 mx-5">
       <div className="flex justify-center">
         <h3 className="heading">{lang.location}</h3>
       </div>

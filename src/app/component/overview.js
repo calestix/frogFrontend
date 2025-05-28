@@ -7,7 +7,7 @@ function Overview() {
       const dict = getDictionary(locale);
        const lang=dict;
   return (
-    <div className='text-center py-18 px-20'>
+    <div className='text-center py-18 md:px-20 px-5'>
         <div className='flex justify-center'>
         <h3 className='heading'>{lang.overviewText}</h3>
         </div>
