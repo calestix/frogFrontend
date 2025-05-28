@@ -97,8 +97,8 @@ export default function Footer() {
           <h3 className="font-semibold text-lg mb-3">{footer.company}</h3>
           <ul className="space-y-2 text-sm">
             {[
-              { label: footer.services, path: "/review" },
-              { label: footer.about_us, path: "/about" },
+              { label: footer.services, path: "/services" },
+              { label: footer.about_us, path: "/about-us" },
               { label: footer.contact_us, path: "/contact-us" },
               { label: footer.blog, path: "/blog" },
             ].map((item, i) => (
