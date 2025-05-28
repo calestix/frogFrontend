@@ -1,84 +1,79 @@
-"use client";
-
-import { useState } from "react";
-
-const aboutContent = {
-  en: {
-    title: "About FORGE T&C EST",
-    sections: [
-      {
-        heading: "Our Story",
-        text: `FORGE T&C EST was founded with the vision to be a leading construction and maintenance company in Saudi Arabia. With years of experience and a dedicated team, we have grown into a trusted partner for residential, commercial, and government projects.`,
-      },
-      {
-        heading: "Our Mission",
-        text: `To provide exceptional construction, repair, and installation services with utmost professionalism, quality, and safety. We aim to exceed client expectations by delivering timely and cost-effective solutions.`,
-      },
-      {
-        heading: "Our Services",
-        text: `We specialize in a wide range of services including metal tank repairs, welding, residential & government building construction, electrical and network wiring, solar energy systems, plumbing, HVAC, and much more.`,
-      },
-      {
-        heading: "Our Values",
-        text: `Integrity, innovation, and customer satisfaction are at the core of everything we do. We are committed to sustainable practices and continuous improvement.`,
-      },
-      {
-        heading: "Why Choose Us?",
-        text: `Experienced team, comprehensive service portfolio, commitment to safety and quality, and a customer-first approach make FORGE T&C EST your ideal partner for construction and maintenance needs.`,
-      },
-    ],
-  },
-  ar: {
-    title: "عن شركة فورج T&C",
-    sections: [
-      {
-        heading: "قصتنا",
-        text: `تأسست شركة فورج T&C بهدف أن تكون شركة رائدة في مجال البناء والصيانة في المملكة العربية السعودية. مع سنوات من الخبرة وفريق مخصص، أصبحنا شريكًا موثوقًا للمشاريع السكنية والتجارية والحكومية.`,
-      },
-      {
-        heading: "مهمتنا",
-        text: `تقديم خدمات استثنائية في البناء والإصلاح والتركيب بأعلى معايير المهنية والجودة والسلامة. نسعى لتجاوز توقعات العملاء من خلال تقديم حلول فعالة من حيث الوقت والتكلفة.`,
-      },
-      {
-        heading: "خدماتنا",
-        text: `نحن متخصصون في مجموعة واسعة من الخدمات تشمل إصلاح خزانات المعادن، اللحام، بناء المباني السكنية والحكومية، تمديد الأسلاك الكهربائية وشبكات الاتصالات، أنظمة الطاقة الشمسية، السباكة، التدفئة والتهوية والتكييف، والمزيد.`,
-      },
-      {
-        heading: "قيمنا",
-        text: `النزاهة، الابتكار، ورضا العملاء هي أساس كل ما نقوم به. نحن ملتزمون بالممارسات المستدامة والتحسين المستمر.`,
-      },
-      {
-        heading: "لماذا تختارنا؟",
-        text: `فريق ذو خبرة، مجموعة خدمات شاملة، التزام بالسلامة والجودة، ونهج يركز على العميل يجعل شركة فورج T&C شريكك المثالي لاحتياجات البناء والصيانة.`,
-      },
-    ],
-  },
-};
+import Image from 'next/image';
 
 export default function AboutUs() {
-  const [lang, setLang] = useState("en");
-  const content = aboutContent[lang];
-
   return (
-    <div className={`min-h-screen p-8 max-w-5xl mx-auto ${lang === "ar" ? "rtl" : "ltr"}`}>
-      {/* Language toggle */}
-      <div className="flex justify-end mb-6">
-        <button
-          onClick={() => setLang(lang === "en" ? "ar" : "en")}
-          className="px-4 py-2 rounded bg-purple-700 text-white hover:bg-purple-800 transition"
-        >
-          {lang === "en" ? "العربية" : "English"}
-        </button>
+    <section className="bg-white py-12 px-6 md:px-20 text-gray-800">
+      <div className="max-w-6xl mx-auto space-y-12">
+        {/* Header */}
+        <div className="text-center">
+          <h2 className="text-3xl font-bold mb-4">About Us</h2>
+          <p className="text-lg text-gray-600">
+            Building the future with integrity, innovation, and passion.
+          </p>
+        </div>
+
+        {/* Company Overview & Image */}
+        <div className="flex flex-col md:flex-row gap-10 items-center">
+          <div className="flex-1 space-y-4">
+            <p>
+              Welcome to <strong>[Your Company Name]</strong>, your trusted partner in delivering
+              high-quality solutions across construction, engineering, and technical services.
+              We are committed to excellence, customer satisfaction, and long-term value.
+            </p>
+            <p>
+              With a team of experienced professionals and a vision to lead through innovation,
+              we provide reliable services that meet the evolving needs of our clients.
+            </p>
+          </div>
+          <div className="flex-1">
+            <Image
+              src="/about-us.jpg" // Place this image in public/about-us.jpg
+              alt="About Us"
+              width={600}
+              height={400}
+              className="rounded-xl shadow-lg object-cover w-full"
+            />
+          </div>
+        </div>
+
+        {/* Services */}
+        <div>
+          <h3 className="text-2xl font-semibold mb-4">Our Services</h3>
+          <ul className="list-disc list-inside space-y-2">
+            <li>Construction & Renovation</li>
+            <li>Electrical & Mechanical Installations</li>
+            <li>Project Management & Consultancy</li>
+            <li>Interior Design & Fit-Out</li>
+            <li>General Maintenance & Technical Services</li>
+          </ul>
+        </div>
+
+        {/* CEO Section */}
+        <div className="flex flex-col md:flex-row gap-10 items-center">
+          <div className="flex-1">
+            <Image
+              src="/ceo.jpg" // Place this image in public/ceo.jpg
+              alt="CEO"
+              width={400}
+              height={400}
+              className="rounded-full object-cover shadow-md w-64 h-64 mx-auto md:mx-0"
+            />
+          </div>
+          <div className="flex-1 space-y-4">
+            <h3 className="text-2xl font-semibold">About Our CEO</h3>
+            <p>
+              <strong>[CEO’s Name]</strong> is the visionary behind our company, bringing over [X] years of
+              industry experience in civil engineering and project leadership. With a deep understanding
+              of both client needs and technical execution, [he/she/they] has led our growth with integrity,
+              innovation, and excellence.
+            </p>
+            <p>
+              Under [his/her/their] leadership, we have become a trusted name across the industry,
+              delivering exceptional results and building strong client relationships.
+            </p>
+          </div>
+        </div>
       </div>
-
-      <h1 className="text-4xl font-bold mb-8 text-purple-800">{content.title}</h1>
-
-      {content.sections.map(({ heading, text }, i) => (
-        <section key={i} className="mb-8">
-          <h2 className="text-2xl font-semibold mb-3">{heading}</h2>
-          <p className="text-gray-700 leading-relaxed">{text}</p>
-        </section>
-      ))}
-    </div>
+    </section>
   );
 }
