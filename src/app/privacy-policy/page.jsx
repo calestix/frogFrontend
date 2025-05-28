@@ -20,16 +20,16 @@ function Page() {
   return (
     <>
       <Navbar />
-      <section className="main-bg pt-25 pb-3">
-        <div className="text-center ">
-          <h4 className="heading py-4">{data?.title}</h4>
+      <section className="text-white h-screen p-25 pb-3">
+        <div className="text-center flex justify-center">
+          <h4 className="heading text-center py-4">{data?.title}</h4>
         </div>
-        <div className="content-page px-24">
+        {/* <div className="content-page px-24">
           <div
             className=""
             dangerouslySetInnerHTML={{ __html: data?.content }}
           />
-        </div>
+        </div> */}
       </section>
       <Footer />
     </>

@@ -89,13 +89,13 @@ button {
 
 .mainButton {
   font-size: 1rem;
-  color: #fafafa;
+  color: #000000;
   text-transform: uppercase;
-  padding: 6px 16px;
+  padding: 8px 26px;
   border-radius: 10px;
   border: 2px solid #fafafa;
-  background: #9810fa;
-  box-shadow: 3px 3px #fafafa;
+  background: #f8eeff;
+  box-shadow: 3px 3px #9f9d9d;
   cursor: pointer;
 }
 

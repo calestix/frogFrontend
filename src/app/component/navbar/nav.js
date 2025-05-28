@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useLanguage } from "../../context/LanguageContext";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "/public/headerlogo.png";
@@ -10,26 +11,24 @@ import "./style.scss";
 export default function Navbar() {
   const { locale, switchLanguage } = useLanguage();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const navItems = [
     { href: "/", label: { en: "Home", ar: "الرئيسية" } },
     { href: "/about-us", label: { en: "About Us", ar: "معلومات عنا" } },
-    { href: "/services", label: { en: "Services", ar: "خدمات" } }, // <-- Added Services
+    { href: "/services", label: { en: "Services", ar: "خدمات" } },
     { href: "/contact-us", label: { en: "Contact Us", ar: "اتصل بنا" } },
     { href: "/blog", label: { en: "Blog", ar: "مدونة" } },
   ];
 
   const handleLanguageChange = (e) => {
     switchLanguage(e.target.value);
-    setMobileMenuOpen(false); // close menu after selection on mobile
+    setMobileMenuOpen(false);
   };
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen((prev) => !prev);
   };
-
-  const currentPath =
-    typeof window !== "undefined" ? window.location.pathname : "/";
 
   return (
     <header className="bg-white border-b border-gray-300 z-99 w-full fixed top-0">
@@ -42,14 +41,13 @@ export default function Navbar() {
           <Image src={logo} alt="Logo" className="h-10 w-auto cursor-pointer" />
         </Link>
 
-        {/* Desktop nav */}
         <nav className="hidden md:flex gap-6 text-gray-700 font-medium">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
               className={
-                currentPath === item.href
+                pathname === item.href
                   ? "active-nav-item"
                   : "hover:text-black duration-200"
               }
@@ -64,7 +62,7 @@ export default function Navbar() {
             aria-label="Select Language"
             value={locale}
             onChange={handleLanguageChange}
-            className=" border px-3  py-1 rounded bg-gray-100 hover:bg-gray-200 cursor-pointer"
+            className="border px-3 py-1 rounded bg-gray-100 hover:bg-gray-200 cursor-pointer"
           >
             <option value="en">EN</option>
             <option value="ar">AR</option>
@@ -91,11 +89,8 @@ export default function Navbar() {
             ></span>
           </button>
         </div>
-
-        {/* Mobile menu toggle button */}
       </div>
 
-      {/* Mobile slide-out menu */}
       <div
         className={`fixed top-0 right-0 h-full w-0 overflow-hidden bg-blue-950 text-white shadow-lg transition-width duration-300 ease-in-out md:hidden z-40 ${
           mobileMenuOpen ? "w-[300px]" : "w-0"
@@ -108,7 +103,7 @@ export default function Navbar() {
               href={item.href}
               onClick={() => setMobileMenuOpen(false)}
               className={`py-2 px-3 ${
-                currentPath === item.href
+                pathname === item.href
                   ? "bg-white bg-opacity-30 text-black"
                   : "hover:bg-white hover:text-black hover:bg-opacity-20 transition-colors duration-200"
               }`}
