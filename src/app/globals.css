@@ -59,9 +59,7 @@ button {
   }
 }
 .heading{
-
   width: fit-content;
-  color: white;
   padding: 8px 80px;
   border: 2px solid rgb(0, 0, 0);
   color: white;
@@ -103,13 +101,13 @@ button {
 
 .mainButton {
   font-size: 1rem;
-  color: #000000;
+  color: #ffffff;
   text-transform: uppercase;
   padding: 8px 26px;
   border-radius: 10px;
   border: 2px solid #fafafa;
-  background: #f8eeff;
-  box-shadow: 3px 3px #9f9d9d;
+  background: goldenrod;
+  box-shadow: 3px 3px gold;
   cursor: pointer;
 }
 
