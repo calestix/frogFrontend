@@ -14,13 +14,13 @@ export default function Services() {
     <>
       <Navbar />
       <div className="py-20 px-6 md:px-20 text-white">
-        <h1 className="text-4xl font-bold text-center mb-12 mt-6">
+        <h1 className="text-4xl text-black font-bold text-center mb-12 mt-6">
           {text.ourServices}
         </h1>
         {lang.map((category, i) => (
           <div key={i} className="mb-20">
             <div className="mb-6">
-              <h2 className="text-2xl font-semibold mb-2">{category.title}</h2>
+              <h2 className="text-2xl font-semibold text-black mb-2">{category.title}</h2>
               <p className="">{category.description}</p>
             </div>
 
@@ -38,7 +38,7 @@ export default function Services() {
               {category.services.map((service, j) => (
                 <div
                   key={j}
-                  className="border rounded-lg p-4 transition duration-300 ease-in-out transform hover:shadow-lg hover:scale-105"
+                  className="border rounded-lg p-4 transition duration-300 ease-in-out transform shadow-lg hover:scale-105"
                 >
                   <h3 className="text-lg font-medium">{service}</h3>
                 </div>

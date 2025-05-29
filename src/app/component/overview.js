@@ -11,7 +11,7 @@ function Overview() {
         <div className='flex justify-center'>
         <h3 className='heading'>{lang.overviewText}</h3>
         </div>
-        <p className='text-center pt-6 text-white'>{lang.overview}</p>
+        <p className='text-center pt-6'>{lang.overview}</p>
     </div>
   )
 }

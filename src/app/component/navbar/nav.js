@@ -62,10 +62,10 @@ export default function Navbar() {
             aria-label="Select Language"
             value={locale}
             onChange={handleLanguageChange}
-            className="border px-3 py-1 rounded bg-gray-100 hover:bg-gray-200 cursor-pointer"
+            className="border px-3 py-1 rounded bg-green-700  cursor-pointer"
           >
             <option value="en">EN</option>
-            <option value="ar">AR</option>
+            <option value="ar">عربي</option>
           </select>
           <button
             onClick={toggleMobileMenu}

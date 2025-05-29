@@ -28,11 +28,11 @@ export default function ContactUsPage() {
     <>
       <Navbar />
       <div className="min-h-screen py-20">
-        <h3 className="text-4xl text-center mt-4 text-white font-bold">{lang.contactUs}</h3>
+        <h3 className="text-4xl text-center mt-4 text-black font-bold">{lang.contactUs}</h3>
 
         {/* Contact Form */}
         <div className="max-w-4xl mx-auto p-6">
-          <h2 className="text-2xl font-semibold mb-6 text-white">
+          <h2 className="text-2xl font-semibold mb-6 text-black">
             {lang.getInTouch}
           </h2>
           <Formik
@@ -49,9 +49,9 @@ export default function ContactUsPage() {
             }}
           >
             {() => (
-              <Form className="space-y-5 bg-white/10 backdrop-blur-md p-6 text-white rounded-xl shadow-lg border border-white/20">
+              <Form className="space-y-5 bg-white/10 backdrop-blur-md p-6 text-black rounded-xl shadow-lg border border-white/20">
                 <div>
-                  <label className="block text-sm font-medium text-white">
+                  <label className="block text-sm font-medium text-black">
                     {lang.fullName}
                   </label>
                   <Field
@@ -73,7 +73,7 @@ export default function ContactUsPage() {
                   }`}
                 >
                   <div>
-                    <label className="block text-sm font-medium text-white">
+                    <label className="block text-sm font-medium text-black">
                       {lang.email}
                     </label>
                     <Field
@@ -89,7 +89,7 @@ export default function ContactUsPage() {
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-white">
+                    <label className="block text-sm font-medium text-black">
                       {lang.phone}
                     </label>
                     <Field
@@ -107,7 +107,7 @@ export default function ContactUsPage() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-white">
+                  <label className="block text-sm font-medium text-black">
                     {lang.service}
                   </label>
                   <Field
@@ -130,7 +130,7 @@ export default function ContactUsPage() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-white">
+                  <label className="block text-sm font-medium text-black">
                     {lang.message}
                   </label>
                   <Field
@@ -149,7 +149,7 @@ export default function ContactUsPage() {
 
                 <button
                   type="submit"
-                  className="bg-purple-800 text-white px-6 py-2 rounded-md hover:bg-purple-900 transition"
+                  className="bg-yellow-700 text-white bold px-6 py-2 rounded-md hover:bg-purple-900 transition"
                 >
                   {lang.submit}
                 </button>

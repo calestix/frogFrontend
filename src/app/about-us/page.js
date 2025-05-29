@@ -12,7 +12,7 @@ export default function AboutUs() {
   return (
     <>
       <Navbar />
-      <section className={`text-white py-20 mt-10 px-6 md:px-20`}>
+      <section className={`text-black py-20 mt-10 px-6 md:px-20`}>
         <div className="max-w-6xl mx-auto space-y-12">
           {/* Header */}
           <div className="text-center">
@@ -41,23 +41,25 @@ export default function AboutUs() {
           </div>
 
           {/* Mission */}
-          <div>
-            <h3 className="text-2xl font-semibold mb-2">
-              {content[0].mission.title}
-            </h3>
-            <p>{content[0].mission.paragraph}</p>
-          </div>
+          <div className="flex gap-5">
+            <div className="border-1 p-4 ">
+              <h3 className="text-2xl font-semibold mb-2">
+                {content[0].mission.title}
+              </h3>
+              <p>{content[0].mission.paragraph}</p>
+            </div>
 
-          {/* Vision */}
-          <div>
-            <h3 className="text-2xl font-semibold mb-2">
-              {content[0].vision.title}
-            </h3>
-            <p>{content[0].vision.paragraph}</p>
+            {/* Vision */}
+            <div className="border-1 p-4 ">
+              <h3 className="text-2xl font-semibold mb-2">
+                {content[0].vision.title}
+              </h3>
+              <p>{content[0].vision.paragraph}</p>
+            </div>
           </div>
 
           {/* Services */}
-          <div>
+          {/* <div>
             <h3 className="text-2xl font-semibold mb-4">
               {content[0].services.title}
             </h3>
@@ -66,7 +68,7 @@ export default function AboutUs() {
                 <li key={i}>{item}</li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* CEO Section */}
           <div className={`flex flex-col md:flex-row gap-10 items-center`}>

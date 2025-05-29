@@ -18,15 +18,23 @@
   }
 }
 body {
-  background: url("/bg2.jpg");
-  background-repeat: repeat;
-  background-position: center;
-  color: var(--foreground);
+  /* background: url("/bg2.jpg"); */
+  /* background-repeat: repeat; */
+  /* background-position: center; */
+  /* color: var(--foreground); */
+  background-color: white;
   font-family: "Poppins", sans-serif;
+  color: white;
 }
 h1,
 h2,h3 {
   font-family:  "Ancizar Sans", sans-serif;;
+}
+h3,h5,h6{
+  color:#1C2526;
+}
+p,span,li{
+   color:#1C2526;
 }
 
 .main-bg {
@@ -51,10 +59,11 @@ button {
   }
 }
 .heading{
+
   width: fit-content;
   color: white;
   padding: 8px 80px;
-  border: 1px solid white;
+  border: 2px solid rgb(0, 0, 0);
   color: white;
   font-size: 20px;
   @media(max-width:768px){
@@ -111,12 +120,9 @@ button {
 
 .heading {
   font-size: 40px;
-  color: #59168b;
+  color: #D4AF37;
   font-weight: 800;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(90deg, #55308d, #ffb3ec);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   animation: float 3s ease-in-out infinite;
 }
 
