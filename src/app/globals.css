@@ -172,3 +172,8 @@ input[type="radio"]{
 .img7 { grid-area: img7; }
 
 }
+
+
+.diagonal-clip {
+  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+}
