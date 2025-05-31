@@ -42,7 +42,7 @@ export default function AboutUs() {
 
           {/* Mission */}
           <div className="flex gap-5">
-            <div className="border-1 p-4 ">
+            <div className="border-1 border-dashed p-4 ">
               <h3 className="text-2xl font-semibold mb-2">
                 {content[0].mission.title}
               </h3>
@@ -50,7 +50,7 @@ export default function AboutUs() {
             </div>
 
             {/* Vision */}
-            <div className="border-1 p-4 ">
+            <div className="border-1 border-dashed p-4 ">
               <h3 className="text-2xl font-semibold mb-2">
                 {content[0].vision.title}
               </h3>

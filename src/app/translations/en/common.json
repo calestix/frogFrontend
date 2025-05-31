@@ -77,6 +77,48 @@
   "OurServicesDes": {
     "para": "At FORGE T&C EST, we offer a comprehensive range of construction, maintenance, and specialized repair services designed to meet the diverse needs of our clients. Our expertise covers both residential and commercial sectors, ensuring high-quality results with every project.",
     "head1": "Highlighted Services Include:",
+    "data": [
+        {
+          "title": "Building & Structural Construction",
+          "categoryImage": "/services/img1.jpg"
+        },
+        {
+          "title": "Renovation & Remodeling",
+          "categoryImage": "/services/img5.jpg"
+        },
+        {
+          "title": "Electrical Installation & Systems",
+          "categoryImage": "/services/img2.jpg"
+        },
+        {
+          "title": "Mechanical & HVAC Services",
+          "categoryImage": "/services/img6.jpg"
+        },
+        {
+          "title": "Plumbing & Gas Systems",
+          "categoryImage": "/services/img7.jpg"
+        },
+        {
+          "title": "Solar & Renewable Energy Solutions",
+          "categoryImage": "/services/img8.jpg"
+        },
+        {
+          "title": "Interior Fit-Out & Finishing",
+          "categoryImage": "/services/img3.jpg"
+        },
+        {
+          "title": "Specialty Interior Solutions",
+          "categoryImage": "/services/img9.jpg"
+        },
+        {
+          "title": "Maintenance & Repairs",
+          "categoryImage": "/services/img4.jpg"
+        },
+        {
+          "title": "Waterproofing & Protective Coatings",
+          "categoryImage": "/services/img10.jpg"
+        }
+    ],
     "list": [
       "🔧 Metal Tank & Pipeline Repair: Expert solutions for repairing and maintaining tanks, reservoirs, and long-distance pipelines.",
       "🏗️ Construction & Renovation: Full construction services for residential and government buildings, as well as remodeling and renovation of existing structures.",
