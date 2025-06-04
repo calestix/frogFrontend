@@ -2,11 +2,11 @@ import 'dotenv/config';
 import axios from "axios";
 import { toast } from "react-toastify";
 
-// baseURL: "https://brajkunjseva.com/api",
+// baseURL: "https://forgetradingandconstruction.com/api",
 // baseURL: "http:/localhost:4005/api",
 // Create instance
 const axiosInstance = axios.create({
-  baseURL: "https://brajkunjseva.com/api",
+  baseURL: "https://forgetradingandconstruction.com/api",
   headers: {
     "Content-Type": "application/json",
   },

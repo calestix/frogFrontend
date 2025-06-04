@@ -7,13 +7,9 @@ import { useAuthActions } from "../../context/useAuthActions";
 const navLinks = [
   { name: "Dashboard", path: "/admin/dashboard" },
   { name: "Account Management", path: "/admin/account-management" },
-  { name: "Products Category", path: "/admin/product-category" },
-  { name: "Products Management", path: "/admin/product-management" },
-  { name: "Purchase", path: "/admin/purchase-product" },
   { name: "CMS Management", path: "/admin/cms-management" },
   { name: "Contact us", path: "/admin/contact-us" },
-  { name: "All Tax", path: "/admin/all-tax" },
-  { name: "Daily Video", path: "/admin/daily-video" },
+  { name: "Blog", path: "/admin/blog" },
 ];
 
 export default function AdminSidebar({ toggleSidebar }) {
