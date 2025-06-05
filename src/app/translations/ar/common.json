@@ -135,22 +135,10 @@
   "location": "موقع",
   "servicespage": [
     {
-      "title": "Building & Structural Construction",
-      "title_ar": "خدمات البناء والهياكل",
-      "description": "Complete solutions for structural building works, ensuring safety and durability.",
-      "description_ar": "حلول كاملة لأعمال البناء الهيكلية، تضمن السلامة والمتانة.",
+      "title": "خدمات البناء والهياكل",
+      "description": "حلول كاملة لأعمال البناء الهيكلية، تضمن السلامة والمتانة.",
       "categoryImage": "/services/img1.jpg",
       "services": [
-        "Building Construction",
-        "Concrete Structure Works",
-        "Masonry & Brickwork",
-        "Steel Structure Works",
-        "Foundation Works",
-        "Bridge Construction",
-        "Road & Highway Construction",
-        "Demolition Services"
-      ],
-      "services_ar": [
         "بناء المباني",
         "أعمال الهياكل الخرسانية",
         "أعمال البناء والطوب",
@@ -162,37 +150,20 @@
       ]
     },
     {
-      "title": "Renovation & Remodeling",
-      "title_ar": "التجديد وإعادة التهيئة",
-      "description": "Expert remodeling and renovation services to upgrade existing structures.",
-      "description_ar": "خدمات التجديد وإعادة التهيئة المتخصصة لترقية المباني القائمة.",
+      "title": "التجديد وإعادة التهيئة",
+      "description": "خدمات التجديد وإعادة التهيئة المتخصصة لترقية المباني القائمة.",
       "categoryImage": "/services/img5.jpg",
       "services": [
-        "Renovation & Remodeling",
-        "Roof Repairs",
-        "Bathroom Renovation"
-      ],
-      "services_ar": [
         "التجديد وإعادة التهيئة",
         "إصلاحات الأسقف",
         "تجديد الحمامات"
       ]
     },
     {
-      "title": "Electrical Installation & Systems",
-      "title_ar": "التركيبات الكهربائية والأنظمة",
-      "description": "Comprehensive electrical solutions for residential and commercial projects.",
-      "description_ar": "حلول كهربائية شاملة للمشاريع السكنية والتجارية.",
+      "title": "التركيبات الكهربائية والأنظمة",
+      "description": "حلول كهربائية شاملة للمشاريع السكنية والتجارية.",
       "categoryImage": "/services/img2.jpg",
       "services": [
-        "Electrical Wiring & Cabling",
-        "Panel Board Installation",
-        "Lighting Installation",
-        "Fire Alarm Systems",
-        "Security Systems",
-        "Generator Setup"
-      ],
-      "services_ar": [
         "الأسلاك والكابلات الكهربائية",
         "تركيب لوحات التحكم",
         "تركيب الإضاءة",
@@ -202,70 +173,38 @@
       ]
     },
     {
-      "title": "Mechanical & HVAC Services",
-      "title_ar": "الخدمات الميكانيكية وأنظمة التكييف",
-      "description": "Professional mechanical equipment and HVAC installations for comfortable, efficient environments.",
-      "description_ar": "تركيب معدات ميكانيكية وأنظمة تكييف احترافية لبيئات مريحة وفعالة.",
+      "title": "الخدمات الميكانيكية وأنظمة التكييف",
+      "description": "تركيب معدات ميكانيكية وأنظمة تكييف احترافية لبيئات مريحة وفعالة.",
       "categoryImage": "/services/img6.jpg",
       "services": [
-        "HVAC Installation",
-        "Mechanical Equipment Installation",
-        "Elevator Installation"
-      ],
-      "services_ar": [
         "تركيب أنظمة التكييف والتبريد",
         "تركيب المعدات الميكانيكية",
         "تركيب المصاعد"
       ]
     },
     {
-      "title": "Plumbing & Gas Systems",
-      "title_ar": "السباكة وأنظمة الغاز",
-      "description": "Reliable plumbing and gas piping services to ensure safety and efficiency.",
-      "description_ar": "خدمات سباكة وأنظمة أنابيب الغاز موثوقة لضمان السلامة والكفاءة.",
+      "title": "السباكة وأنظمة الغاز",
+      "description": "خدمات سباكة وأنظمة أنابيب الغاز موثوقة لضمان السلامة والكفاءة.",
       "categoryImage": "/services/img7.jpg",
       "services": [
-        "Plumbing Services",
-        "Gas Piping",
-        "Plumbing Maintenance"
-      ],
-      "services_ar": [
         "خدمات السباكة",
         "أنابيب الغاز",
         "صيانة السباكة"
       ]
     },
     {
-      "title": "Solar & Renewable Energy Solutions",
       "title_ar": "حلول الطاقة الشمسية والمتجددة",
-      "description": "Sustainable energy solutions including solar panel installation and related services.",
-      "description_ar": "حلول طاقة مستدامة تشمل تركيب الألواح الشمسية والخدمات ذات الصلة.",
+      "description": "حلول طاقة مستدامة تشمل تركيب الألواح الشمسية والخدمات ذات الصلة.",
       "categoryImage": "/services/img8.jpg",
       "services": [
-        "Solar Panel Installation"
-      ],
-      "services_ar": [
         "تركيب الألواح الشمسية"
       ]
     },
     {
-      "title": "Interior Fit-Out & Finishing",
-      "title_ar": "التشطيبات والديكورات الداخلية",
-      "description": "Transform interiors with expert fit-out and finishing services tailored to your needs.",
-      "description_ar": "تحويل المساحات الداخلية بخدمات تشطيب وديكور متخصصة تناسب احتياجاتك.",
+      "title": "التشطيبات والديكورات الداخلية",
+      "description": "تحويل المساحات الداخلية بخدمات تشطيب وديكور متخصصة تناسب احتياجاتك.",
       "categoryImage": "/services/img3.jpg",
       "services": [
-        "False Ceiling Installation",
-        "Partition Works",
-        "Painting & Finishing",
-        "Carpentry Works",
-        "Flooring Installation",
-        "Wall Cladding",
-        "Modular Kitchen Setup",
-        "Furniture Installation",
-        "Custom Joinery"
-      ],
-      "services_ar": [
         "تركيب الأسقف المعلقة",
         "أعمال التقسيم الداخلي",
         "الطلاء والتشطيبات",
@@ -278,40 +217,20 @@
       ]
     },
     {
-      "title": "Specialty Interior Solutions",
       "title_ar": "حلول داخلية متخصصة",
-      "description": "Innovative interior solutions focused on comfort and aesthetics.",
       "description_ar": "حلول داخلية مبتكرة تركز على الراحة والجماليات.",
       "categoryImage": "/services/img9.jpg",
-      "services": [
-        "Lighting Design",
-        "Acoustic Solutions"
-      ],
+      
       "services_ar": [
         "تصميم الإضاءة",
         "الحلول الصوتية"
       ]
     },
     {
-      "title": "Maintenance & Repairs",
-      "title_ar": "الصيانة والإصلاحات",
-      "description": "Preventative and corrective maintenance to maximize facility performance.",
-      "description_ar": "صيانة وقائية وتصحيحية لتعظيم أداء المنشآت.",
+      "title": "الصيانة والإصلاحات",
+      "description": "صيانة وقائية وتصحيحية لتعظيم أداء المنشآت.",
       "categoryImage": "/services/img4.jpg",
       "services": [
-        "AC Maintenance",
-        "Electrical Maintenance",
-        "Painting Maintenance",
-        "Carpentry Maintenance",
-        "Masonry Repairs",
-        "Waterproofing Maintenance",
-        "Roof Repairs",
-        "Facade Cleaning",
-        "Garden & Landscaping",
-        "Pest Control Services",
-        "Cleaning Services"
-      ],
-      "services_ar": [
         "صيانة مكيفات الهواء",
         "الصيانة الكهربائية",
         "صيانة الطلاء",
@@ -326,15 +245,10 @@
       ]
     },
     {
-      "title": "Waterproofing & Protective Coatings",
-      "title_ar": "العزل المائي والطلاءات الوقائية",
-      "description": "Specialized waterproofing and protective services to safeguard your structures.",
-      "description_ar": "خدمات متخصصة في العزل المائي والطلاءات الوقائية لحماية منشآتك.",
+      "title": "العزل المائي والطلاءات الوقائية",
+      "description": "خدمات متخصصة في العزل المائي والطلاءات الوقائية لحماية منشآتك.",
       "categoryImage": "/services/img10.jpg",
       "services": [
-        "Waterproofing"
-      ],
-      "services_ar": [
         "العزل المائي"
       ]
     }
