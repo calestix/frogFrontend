@@ -3,7 +3,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 // baseURL: "https://forgetradingandconstruction.com/api",
-// baseURL: "http:/localhost:4005/api",
+// baseURL: "http://localhost:4005/api",
 // Create instance
 const axiosInstance = axios.create({
   baseURL: "https://forgetradingandconstruction.com/api",

@@ -1,19 +1,22 @@
 "use client";
 
-import { useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import Image from "next/image";
-import bg from "/public/contactus.jpg"; // Your high quality image
 import Footer from "../component/footer/footer";
 import Navbar from "../component/navbar/nav";
 import { useLanguage } from "../context/LanguageContext";
 import { getDictionary } from "../lib/dictionary";
+import { apiCall } from "../utils/ApiCall";
 
 const validationSchema = Yup.object({
   fullName: Yup.string().required("Required"),
   email: Yup.string().email("Invalid email").required("Required"),
-  phone: Yup.string().required("Required"),
+  phoneNumber: Yup.string()
+    .matches(/^\d+$/, "Only numbers allowed")
+    .required("Required"),
+  countryCode: Yup.string()
+    .matches(/^\d+$/, "Only numbers allowed")
+    .required("Required"),
   service: Yup.string().required("Required"),
   message: Yup.string().required("Required"),
 });
@@ -24,14 +27,45 @@ export default function ContactUsPage() {
   const lang = dict.contactUs;
   const services = dict.services;
 
+  const handleSubmit = async (values) => {
+    try {
+      await apiCall("/user/contactUs", "post", { values });
+      window.location.reload()
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <>
       <Navbar />
-      <div className="min-h-screen py-20">
-        <h3 className="text-4xl text-center mt-4 text-black font-bold">{lang.contactUs}</h3>
+      <div className="min-h-screen py-20 xl:px-20 md:px-8">
+        <div className="lg:flex mt-8">
+          <div className="p-6 lg:m-0 m-6 xl:basis-1/2 basis-1/3 rounded-xl bg-white/20 shadow-lg backdrop-blur-md text-gray-800">
+          <h3 className="uppercase text-sm font-bold text-gray-700">{lang.contactUs}</h3>
+          <h1 className="text-5xl font-extrabold text-purple-900 mt-3 mb-6">{lang.gtt}</h1>
+          <p className="text-lg text-gray-700 mb-6">
+            {lang.desc}
+          </p>
 
-        {/* Contact Form */}
-        <div className="max-w-4xl mx-auto p-6">
+          <div className="space-y-4">
+            <div className="bg-white/40 backdrop-blur-md shadow rounded-xl flex items-center p-4">
+              <span className="text-2xl mr-3">📧</span>
+              <div>
+                <p className="text-sm font-semibold text-gray-800">{lang.email}</p>
+                <p className="text-gray-700"> xyz@gmail.com</p>
+              </div>
+            </div>
+            <div className="bg-white/40 backdrop-blur-md shadow rounded-xl flex items-center p-4">
+              <span className="text-2xl mr-3">📞</span>
+              <div>
+                <p className="text-sm font-semibold text-gray-800">{lang.phone}</p>
+                <p className="text-gray-700">+91 9876543210</p>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div className="xl:basis-1/2 basis-2/3 mx-auto p-6">
           <h2 className="text-2xl font-semibold mb-6 text-black">
             {lang.getInTouch}
           </h2>
@@ -39,13 +73,15 @@ export default function ContactUsPage() {
             initialValues={{
               fullName: "",
               email: "",
-              phone: "",
+              phoneNumber: "",
+              countryCode:"",
+              countryCode: "",
               service: "",
               message: "",
             }}
             validationSchema={validationSchema}
             onSubmit={(values) => {
-              alert(JSON.stringify(values, null, 2));
+              handleSubmit(values);
             }}
           >
             {() => (
@@ -88,21 +124,44 @@ export default function ContactUsPage() {
                       className="text-red-500 text-sm"
                     />
                   </div>
-                  <div>
-                    <label className="block text-sm font-medium text-black">
-                      {lang.phone}
-                    </label>
-                    <Field
-                      name="phone"
-                      type="text"
-                      className="mt-1 p-2 border w-full rounded-md"
-                      placeholder={lang.phone}
-                    />
-                    <ErrorMessage
-                      name="phone"
-                      component="div"
-                      className="text-red-500 text-sm"
-                    />
+                  <div className="flex ">
+                    <div className="me-3">
+                      <label className="block text-sm whitespace-nowrap font-medium text-black">
+                        {lang.countryCode}
+                      </label>
+                      <Field
+                        name="countryCode"
+                        type="text"
+                        className="mt-1 p-2 border w-[80px] rounded-md"
+                        placeholder="996"
+                        pattern="\d*"
+                        inputMode="numeric"
+                      />
+                      <ErrorMessage
+                        name="countryCode"
+                        component="div"
+                        className="text-red-500 text-sm"
+                      />
+                    </div>
+
+                    <div>
+                      <label className="block text-sm font-medium text-black">
+                        {lang.phone}
+                      </label>
+                      <Field
+                        name="phoneNumber"
+                        type="text"
+                        className="mt-1 p-2 border w-full rounded-md"
+                        placeholder="9876543210"
+                        pattern="\d*"
+                        inputMode="numeric"
+                      />
+                      <ErrorMessage
+                        name="phoneNumber"
+                        component="div"
+                        className="text-red-500 text-sm"
+                      />
+                    </div>
                   </div>
                 </div>
 
@@ -157,6 +216,8 @@ export default function ContactUsPage() {
             )}
           </Formik>
         </div>
+        </div>
+        
       </div>
       <Footer />
     </>

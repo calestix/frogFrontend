@@ -99,6 +99,28 @@ button {
   background: rgba(128, 0, 128, 0.756);
 }
 
+.addbtn{
+  background-color: blueviolet;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.addblog{
+  label{
+    color: black;
+    font-size: 16px;
+  }
+  input{
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin-bottom: 12px;
+  }
+}
+
 .mainButton {
   font-size: 1rem;
   color: #ffffff;

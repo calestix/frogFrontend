@@ -6,7 +6,7 @@ import { useAuthActions } from "../../context/useAuthActions";
 
 const navLinks = [
   { name: "Dashboard", path: "/admin/dashboard" },
-  { name: "Account Management", path: "/admin/account-management" },
+  // { name: "Account Management", path: "/admin/account-management" },
   { name: "CMS Management", path: "/admin/cms-management" },
   { name: "Contact us", path: "/admin/contact-us" },
   { name: "Blog", path: "/admin/blog" },
