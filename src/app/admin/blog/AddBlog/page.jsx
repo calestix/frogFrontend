@@ -167,7 +167,8 @@ export default function AddBlogForm() {
         {bannerImg && (
           <div className="mt-2 relative w-32 h-32">
             <img
-              src={bannerImg}
+              src={`https://forgetradingandconstruction.com/api/api/assets/get-asset?path=${encodeURIComponent(bannerImg)}`}
+              // src={bannerImg}
               alt="banner"
               className="w-full h-full object-cover rounded"
             />

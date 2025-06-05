@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 // baseURL: "http://localhost:4005/api",
 // Create instance
 const axiosInstance = axios.create({
-  baseURL: "https://forgetradingandconstruction.com/api",
+  baseURL: "https://forgetradingandconstruction.com/api/api",
   headers: {
     "Content-Type": "application/json",
   },

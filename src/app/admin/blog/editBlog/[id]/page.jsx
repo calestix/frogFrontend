@@ -175,7 +175,9 @@ export default function EditBlogForm() {
         />
         {bannerImg && (
           <div className="mt-2">
-            <img src={bannerImg} alt="Banner Preview" className="h-40 w-auto" />
+            <img
+              src={`https://forgetradingandconstruction.com/api/api/assets/get-asset?path=${encodeURIComponent(bannerImg)}`}
+              alt="Banner Preview" className="h-40 w-auto" />
             <button type="button" onClick={handleRemove} className="text-red-500 underline">Remove</button>
           </div>
         )}
