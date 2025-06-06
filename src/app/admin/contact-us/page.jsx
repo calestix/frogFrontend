@@ -61,7 +61,7 @@ export default function Page() {
                 >
                   <td className="px-4 py-2">{index + 1 + limit * (currentPage - 1)}</td>
                   <td className="px-4 py-2 min-w-[250px]">
-                    {item?.firstName} {item?.lastName}
+                    {item?.fullName}
                   </td>
                   <td className="px-4 py-2 min-w-[150px]">{item?.email}</td>
                   <td className="px-4 py-2">
