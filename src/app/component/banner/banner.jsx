@@ -1,9 +1,11 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useLanguage } from "../../context/LanguageContext";
 import { getDictionary } from "../../lib/dictionary";
 
 export default function Banner() {
+  const navigate=useRouter()
   const { locale } = useLanguage();
   const dict = getDictionary(locale);
   const banner = dict.banner;
@@ -27,7 +29,7 @@ export default function Banner() {
         <h2 className="text-white md:text-5xl text-3xl pt-2 font-bold text-center leading-tight">
           {banner.subtitle}
         </h2>
-        <button className="mainButton mt-5">{lang.contact_us}</button>
+        <button className="mainButton mt-5" onClick={()=>navigate.push("/contact-us")}>{lang.contact_us}</button>
       </div>
     </section>
   );

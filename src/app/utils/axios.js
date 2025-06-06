@@ -1,15 +1,11 @@
 import 'dotenv/config';
 import axios from "axios";
 import { toast } from "react-toastify";
-const lang=sessionStorage.getItem("lang")
-// baseURL: "https://forgetradingandconstruction.com/api",
-// baseURL: "http://localhost:4005/api",
-// Create instance
+
 const axiosInstance = axios.create({
   baseURL: "https://forgetradingandconstruction.com/api/api",
   headers: {
     "Content-Type": "application/json",
-    language:lang
   },
   withCredentials: false,
 });
@@ -17,6 +13,10 @@ const axiosInstance = axios.create({
 // 🔐 Request interceptor for Bearer token
 axiosInstance.interceptors.request.use(
   (config) => {
+    if (typeof window !== "undefined") {
+      const lang = sessionStorage.getItem("lang") || "en";
+      config.headers["language"] = lang;
+    }
     const token = localStorage.getItem("token") || sessionStorage.getItem("token");
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
@@ -60,3 +60,7 @@ axiosInstance.interceptors.response.use(
 );
 
 export default axiosInstance;
+
+// baseURL: "https://forgetradingandconstruction.com/api",
+// baseURL: "http://localhost:4005/api",
+// Create instance

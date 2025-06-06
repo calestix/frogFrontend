@@ -1,22 +1,22 @@
-"use client"
+"use client";
 import React, { useEffect, useState } from "react";
 import Navbar from "../component/navbar/nav";
 import Footer from "../component/footer/footer";
 import { apiCall } from "../utils/ApiCall";
 
 function Page() {
-  const[data,setData]=useState()
-  const handleResponse=async()=>{
+  const [data, setData] = useState();
+  const handleResponse = async () => {
     try {
-      const {data}=await apiCall("/user/getCms/termsAndConditions","get")
-      setData(data[0])
+      const { data } = await apiCall("/user/getCms/termsAndConditions", "get");
+      setData(data[0]);
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
-  }
-  useEffect(()=>{
-    handleResponse()
-  },[])
+  };
+  useEffect(() => {
+    handleResponse();
+  }, []);
   return (
     <>
       <Navbar />
@@ -24,14 +24,12 @@ function Page() {
         <div className="text-center  flex justify-center">
           <h4 className="heading text-black py-4">{data?.title}</h4>
         </div>
-        {/* <div className="content-page px-24">
-          
-           <div
-        className=""
-        dangerouslySetInnerHTML={{ __html: data?.content}}
-      />
-        </div> */}
-        
+        <div className="content-page px-24">
+          <div
+            className=""
+            dangerouslySetInnerHTML={{ __html: data?.content }}
+          />
+        </div>
       </section>
       <Footer />
     </>

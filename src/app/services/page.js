@@ -4,8 +4,10 @@ import Navbar from "../component/navbar/nav";
 import Footer from "../component/footer/footer";
 import { getDictionary } from "../lib/dictionary";
 import { useLanguage } from "../context/LanguageContext";
+import { useRouter } from "next/navigation";
 
 export default function Services() {
+  const navigate = useRouter();
   const { locale } = useLanguage();
   const dict = getDictionary(locale);
   const lang = dict.servicespage;
@@ -20,7 +22,9 @@ export default function Services() {
         {lang.map((category, i) => (
           <div key={i} className="mb-20">
             <div className="mb-6">
-              <h2 className="text-2xl font-semibold text-black mb-2">{category.title}</h2>
+              <h2 className="text-2xl font-semibold text-black mb-2">
+                {category.title}
+              </h2>
               <p className="">{category.description}</p>
             </div>
 
@@ -44,7 +48,12 @@ export default function Services() {
                 </div>
               ))}
             </div>
-            <button className="mainButton mt-5">{text.contact_us}</button>
+            <button
+              className="mainButton mt-5"
+              onClick={() => navigate.push("/contact-us")}
+            >
+              {text.contact_us}
+            </button>
           </div>
         ))}
       </div>

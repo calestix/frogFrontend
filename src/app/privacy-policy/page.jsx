@@ -24,12 +24,12 @@ function Page() {
         <div className="text-center flex justify-center">
           <h4 className="heading text-center py-4">{data?.title}</h4>
         </div>
-        {/* <div className="content-page px-24">
+        <div className="content-page px-24">
           <div
             className=""
             dangerouslySetInnerHTML={{ __html: data?.content }}
           />
-        </div> */}
+        </div>
       </section>
       <Footer />
     </>
