@@ -22,7 +22,7 @@ function Dashboard() {
     <div className="p-6 bg-gray-100 min-h-screen">
       <h1 className="text-3xl font-bold mt-0 mb-6 text-gray-800">Dashboard</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {data.map((item, idx) => (
+        {/* {data.map((item, idx) => (
           <div
             key={idx}
             className="flex items-center p-5 bg-white rounded-2xl shadow-md hover:shadow-lg transition"
@@ -35,7 +35,7 @@ function Dashboard() {
               <p className="text-xl font-semibold text-gray-800">{item.value}</p>
             </div>
           </div>
-        ))}
+        ))} */}
       </div>
     </div>
   );
