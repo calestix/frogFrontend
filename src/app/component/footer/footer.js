@@ -1,17 +1,11 @@
 "use client";
 import { useRouter } from "next/navigation";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaWhatsapp,
-  FaYoutube,
-  FaXTwitter,
-} from "react-icons/fa6";
-import { GrFacebookOption } from "react-icons/gr";
 
-import { MdLocationOn, MdEmail, MdPhone } from "react-icons/md";
+
+import { MdLocationOn, MdEmail, MdPhone, MdOutlineWhatsapp } from "react-icons/md";
 import { useLanguage } from "../../context/LanguageContext";
 import { getDictionary } from "../../lib/dictionary";
+import { Facebook, Instagram, Twitter, Youtube,Whatsapp } from "lucide-react";
 
 export default function Footer() {
   const { locale } = useLanguage();
@@ -26,7 +20,7 @@ export default function Footer() {
         alt="forge"
         className="mb-4 w-36 hover:scale-105 transition-transform duration-300"
       />
-      <div className="grid md:grid-cols-3 gap-10 border-b border-yellow-300 pb-10">
+      <div className="grid md:grid-cols-[50%_25%_25%] gap-10 border-b border-yellow-300 pb-10">
         {/* Logo and Contact */}
         <div>
           <div className="space-y-2 text-sm leading-6">
@@ -47,30 +41,36 @@ export default function Footer() {
           <div className="flex gap-4 mt-2 text-xl">
             {[
               {
-                icon: <FaInstagram />,
-                link: "#",
+                icon: <Instagram size={26} />,
+                link: "https://www.instagram.com/forge3ats/",
                 color: "hover:bg-pink-500",
               },
               {
-                icon: <FaYoutube />,
-                link: "#",
+                icon: <Youtube size={26} />,
+                link: "https://www.youtube.com/channel/UCLPjviwQ5oezkKbYGYvnBjg",
                 color: "hover:bg-red-600",
               },
               {
-                icon: <FaXTwitter />,
-                link: "#",
+                icon: <Twitter size={26} />,
+                link: "https://x.com/forgeats3",
                 color: "hover:bg-black",
               },
               {
-                icon: <GrFacebookOption/>,
-                link: "#",
+                icon: <Facebook size={26} />,
+                link: "https://www.facebook.com/profile.php?id=61577260822002",
                 color: "hover:bg-blue-600",
+              },
+              {
+                icon: <MdOutlineWhatsapp size={26} />,
+                link: "#",
+                color: "hover:bg-green-600",
               },
             ].map((item, i) => (
               <a
                 href={item.link}
                 key={i}
-                className={`w-12 h-12 flex items-center justify-center rounded-full border-2 border-black text-black transition-all duration-300 hover:text-white ${item.color}`}
+                target="_blank"
+                className={`w-12 h-12 flex items-center justify-center rounded-full border-2 border-black hover:border-0 text-black transition-all duration-300 hover:text-white ${item.color}`}
               >
                 {item.icon}
               </a>

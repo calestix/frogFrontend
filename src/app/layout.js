@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
           content="https://forgetradingandconstruction.com/"
         />
         <meta name="twitter:card" content="summary_large_image" />
-
+        <title>Forge</title>
         {/* Organization Structured Data */}
         <script
           type="application/ld+json"
