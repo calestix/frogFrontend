@@ -11,6 +11,7 @@ import Vision from "./component/vision"
 export default function Home() {
   return (
     <>
+    
           <Navbar />
           <Banner/>
           <Overview/>

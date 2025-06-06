@@ -38,6 +38,10 @@ export default function ContactUsPage() {
 
   return (
     <>
+     <head>
+        <title>Contact Us - FORGE Trading and Construction</title>
+        <meta name="description" content="Contact Forge Trading and Construction for inquiries and service requests." />
+      </head>
       <Navbar />
       <div className="min-h-screen py-20 xl:px-20 md:px-8">
         <div className="lg:flex mt-8">

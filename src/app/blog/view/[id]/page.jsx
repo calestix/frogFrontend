@@ -2,10 +2,7 @@
 import { useParams, useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { apiCall } from "../../../utils/ApiCall";
-import Image from "next/image";
 import { motion } from "framer-motion";
-import parse from "html-react-parser";
-import { format } from "date-fns";
 import Navbar from "@/src/app/component/navbar/nav";
 import Footer from "@/src/app/component/footer/footer";
 function Page() {
@@ -26,6 +23,10 @@ function Page() {
 
   return (
     <>
+    <head>
+        <title>{data?.title} - FORGE Blog</title>
+        <meta name="description" content={data?.title} />
+      </head>
     <Navbar/>
     <div className="mt-20 blog-details">
       <motion.div

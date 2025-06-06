@@ -29,6 +29,10 @@ function Blog() {
 
   return (
     <>
+     <head>
+        <title>Blog - FORGE Trading and Construction</title>
+        <meta name="description" content="Latest news and articles about construction and repair services by Forge." />
+      </head>
       <Navbar />
       <div className="min-h-screen py-20 md:px-20 px-8">
         <div className="flex justify-center mb-8">

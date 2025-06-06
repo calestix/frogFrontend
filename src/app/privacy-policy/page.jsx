@@ -20,7 +20,7 @@ function Page() {
   return (
     <>
       <Navbar />
-      <section className="text-white h-screen p-25 pb-3">
+      <section className="text-white  p-25 pb-3">
         <div className="text-center flex justify-center">
           <h4 className="heading text-center py-4">{data?.title}</h4>
         </div>
