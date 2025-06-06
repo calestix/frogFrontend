@@ -57,19 +57,16 @@ function Blog() {
                 />
                 <div className="absolute inset-0 bg-black/30 z-10" />
                 <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent text-white z-20">
-                  <h4 className="text-xl font-semibold text-white">
-                    {item?.title}
-                  </h4>
+                  
                 </div>
               </div>
 
               {/* Card body */}
-              <div className="p-5 bg-white flex flex-col justify-between h-[220px]">
-                <div
-                  className="text-gray-700 text-sm leading-relaxed line-clamp-4 mb-4"
-                  dangerouslySetInnerHTML={{ __html: item?.content }}
-                />
-                <button
+              <div className="p-5 bg-white flex flex-col justify-between h-[190px]">
+                <h4 className="text-xl font-semibold text-black">
+                    {item?.title}
+                  </h4>
+                 <button
                   className="mainButton"
                   onClick={() => navigate.push(`/blog/view/${item?._id}`)}
                 >

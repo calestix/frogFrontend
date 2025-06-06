@@ -25,14 +25,14 @@ function Vision() {
         </div>
 
         {/* Text */}
-        <div className="text-center md:text-left">
+        <div className="text-left">
           <h3 className="text-4xl heading">{lang.mission?.title}</h3>
           <p className="mt-6 text-gray-700 text-lg leading-relaxed">
             {lang.mission?.paragraph}
           </p>
           <ul className="list-disc pl-5 mt-4">
             {lang?.mission?.point?.map((item, index) => (
-              <li key={index} className="mb-2">
+              <li key={index} className="mb-2 text-left">
                 {item}
               </li>
             ))}
@@ -46,7 +46,7 @@ function Vision() {
       {/* Vision Section */}
       <div className="grid md:grid-cols-2 gap-10 items-center md:flex-row-reverse">
         {/* Text */}
-        <div className="text-center md:text-left">
+        <div className="text-left">
           <h3 className="text-4xl heading">{lang.vision?.title}</h3>
           <p className="mt-6 text-gray-700 text-lg leading-relaxed">
             {lang.vision?.paragraph}

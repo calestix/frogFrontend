@@ -53,7 +53,7 @@ export default function AboutUs() {
           </div>
 
           {/* Mission */}
-          <div className="flex gap-5">
+          <div className="sm:flex gap-5">
             <div className="border-1 border-dashed p-4 ">
               <h3 className="text-2xl font-semibold mb-2">
                 {content[0].mission.title}
@@ -72,7 +72,7 @@ export default function AboutUs() {
             </div>
 
             {/* Vision */}
-            <div className="border-1 border-dashed p-4 ">
+            <div className="border-1 border-dashed p-4 sm:mt-0 mt-4">
               <h3 className="text-2xl font-semibold mb-2">
                 {content[0].vision.title}
               </h3>
@@ -80,17 +80,6 @@ export default function AboutUs() {
             </div>
           </div>
 
-          {/* Services */}
-          {/* <div>
-            <h3 className="text-2xl font-semibold mb-4">
-              {content[0].services.title}
-            </h3>
-            <ul className="list-disc list-inside space-y-2">
-              {content[0].services.items.map((item, i) => (
-                <li key={i}>{item}</li>
-              ))}
-            </ul>
-          </div> */}
 
           {/* CEO Section */}
           <div className={`flex flex-col md:flex-row gap-10 items-center`}>

@@ -57,7 +57,7 @@ export default function ContactUsPage() {
               <span className="text-2xl mr-3">📧</span>
               <div>
                 <p className="text-sm font-semibold text-gray-800">{lang.email}</p>
-                <p className="text-gray-700">info@forgetradingandconstruction.com</p>
+                <p className="text-gray-700 break-all">info@forgetradingandconstruction.com</p>
               </div>
             </div>
             <div className="bg-white/40 backdrop-blur-md shadow rounded-xl flex items-center p-4">
