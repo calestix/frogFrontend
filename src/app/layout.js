@@ -24,7 +24,6 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
 
-        {/* SEO Meta Tags */}
         <meta
           name="description"
           content="FORGE Trading and Construction - Saudi Arabia's trusted construction & repair services partner."
