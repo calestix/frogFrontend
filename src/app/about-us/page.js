@@ -43,7 +43,7 @@ export default function AboutUs() {
             </div>
             <div className="flex-1">
               <Image
-                src="/aboutus.jpg"
+                src="/about.jpg"
                 alt="About Us"
                 width={600}
                 height={400}

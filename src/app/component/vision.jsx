@@ -16,7 +16,7 @@ function Vision() {
         <div className="group relative w-full h-[300px] md:h-[400px] overflow-hidden">
           <div className="w-full h-full diagonal-clip overflow-hidden">
             <Image
-              src="/mision.jpg"
+              src="/mission.jpg"
               alt="Our Mission"
               fill
               className="object-cover transform group-hover:scale-105 transition duration-700 ease-in-out"
