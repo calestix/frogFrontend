@@ -25,14 +25,14 @@ function Vision() {
         </div>
 
         {/* Text */}
-        <div className="text-left">
+        <div className="">
           <h3 className="text-4xl heading">{lang.mission?.title}</h3>
           <p className="mt-6 text-gray-700 text-lg leading-relaxed">
             {lang.mission?.paragraph}
           </p>
           <ul className="list-disc pl-5 mt-4">
             {lang?.mission?.point?.map((item, index) => (
-              <li key={index} className="mb-2 text-left">
+              <li key={index} className="mb-2">
                 {item}
               </li>
             ))}

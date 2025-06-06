@@ -64,7 +64,7 @@ export default function ContactUsPage() {
               <span className="text-2xl mr-3">📞</span>
               <div>
                 <p className="text-sm font-semibold text-gray-800">{lang.phone}</p>
-                <p className="text-gray-700">+966505837832</p>
+                <p className="text-gray-700">966505837832</p>
               </div>
             </div>
           </div>
@@ -148,7 +148,7 @@ export default function ContactUsPage() {
                         name="countryCode"
                         type="text"
                         className="mt-1 p-2 border w-[80px] rounded-md"
-                        placeholder="996"
+                        placeholder=""
                         pattern="\d*"
                         inputMode="numeric"
                       />
@@ -167,7 +167,7 @@ export default function ContactUsPage() {
                         name="phoneNumber"
                         type="text"
                         className="mt-1 p-2 border w-full rounded-md"
-                        placeholder="9876543210"
+                        placeholder={lang.phone}
                         pattern="\d*"
                         inputMode="numeric"
                       />
