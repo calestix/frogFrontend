@@ -5,7 +5,10 @@ import {
   FaInstagram,
   FaWhatsapp,
   FaYoutube,
-} from "react-icons/fa";
+  FaXTwitter,
+} from "react-icons/fa6";
+import { GrFacebookOption } from "react-icons/gr";
+
 import { MdLocationOn, MdEmail, MdPhone } from "react-icons/md";
 import { useLanguage } from "../../context/LanguageContext";
 import { getDictionary } from "../../lib/dictionary";
@@ -20,7 +23,7 @@ export default function Footer() {
     <footer className="bg-white text-black px-6 md:px-20 py-12">
       <img
         src="/headerlogo.png"
-        alt="Braj Kunj Logo"
+        alt="forge"
         className="mb-4 w-36 hover:scale-105 transition-transform duration-300"
       />
       <div className="grid md:grid-cols-3 gap-10 border-b border-yellow-300 pb-10">
@@ -44,28 +47,30 @@ export default function Footer() {
           <div className="flex gap-4 mt-2 text-xl">
             {[
               {
-                icon: <FaFacebookF />,
-                link: "#",
-              },
-              {
                 icon: <FaInstagram />,
                 link: "#",
-              },
-              {
-                icon: <FaWhatsapp />,
-                link: "#",
+                color: "hover:bg-pink-500",
               },
               {
                 icon: <FaYoutube />,
                 link: "#",
+                color: "hover:bg-red-600",
+              },
+              {
+                icon: <FaXTwitter />,
+                link: "#",
+                color: "hover:bg-black",
+              },
+              {
+                icon: <GrFacebookOption/>,
+                link: "#",
+                color: "hover:bg-blue-600",
               },
             ].map((item, i) => (
               <a
-                key={i}
                 href={item.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-purple-800 transition-transform duration-300 hover:scale-110"
+                key={i}
+                className={`w-12 h-12 flex items-center justify-center rounded-full border-2 border-black text-black transition-all duration-300 hover:text-white ${item.color}`}
               >
                 {item.icon}
               </a>
@@ -79,7 +84,10 @@ export default function Footer() {
           <ul className="space-y-2 text-sm">
             {[
               { label: footer.privacy_policy, path: "/privacy-policy" },
-              { label: footer.terms_and_conditions, path: "/terms-and-condition" },
+              {
+                label: footer.terms_and_conditions,
+                path: "/terms-and-condition",
+              },
             ].map((item, i) => (
               <li
                 key={i}

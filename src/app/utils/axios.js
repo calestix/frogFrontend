@@ -1,7 +1,7 @@
 import 'dotenv/config';
 import axios from "axios";
 import { toast } from "react-toastify";
-
+const lang=sessionStorage.getItem("lang")
 // baseURL: "https://forgetradingandconstruction.com/api",
 // baseURL: "http://localhost:4005/api",
 // Create instance
@@ -9,6 +9,7 @@ const axiosInstance = axios.create({
   baseURL: "https://forgetradingandconstruction.com/api/api",
   headers: {
     "Content-Type": "application/json",
+    language:lang
   },
   withCredentials: false,
 });

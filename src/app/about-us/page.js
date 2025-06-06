@@ -47,6 +47,16 @@ export default function AboutUs() {
                 {content[0].mission.title}
               </h3>
               <p>{content[0].mission.paragraph}</p>
+              <ul className="list-disc pl-5 mt-4">
+                {content[0]?.mission?.point?.map((item, index) => (
+                  <li key={index} className="mb-2">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-6 text-gray-700 text-[16px] leading-relaxed">
+                {content[0].mission?.endpara}
+              </p>
             </div>
 
             {/* Vision */}

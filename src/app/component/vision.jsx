@@ -27,7 +27,19 @@ function Vision() {
         {/* Text */}
         <div className="text-center md:text-left">
           <h3 className="text-4xl heading">{lang.mission?.title}</h3>
-          <p className="mt-6 text-gray-700 text-lg leading-relaxed">{lang.mission?.paragraph}</p>
+          <p className="mt-6 text-gray-700 text-lg leading-relaxed">
+            {lang.mission?.paragraph}
+          </p>
+          <ul className="list-disc pl-5 mt-4">
+            {lang?.mission?.point?.map((item, index) => (
+              <li key={index} className="mb-2">
+                {item}
+              </li>
+            ))}
+          </ul>
+          <p className="mt-6 text-gray-700 text-[16px] leading-relaxed">
+            {lang.mission?.endpara}
+          </p>
         </div>
       </div>
 
@@ -36,7 +48,9 @@ function Vision() {
         {/* Text */}
         <div className="text-center md:text-left">
           <h3 className="text-4xl heading">{lang.vision?.title}</h3>
-          <p className="mt-6 text-gray-700 text-lg leading-relaxed">{lang.vision?.paragraph}</p>
+          <p className="mt-6 text-gray-700 text-lg leading-relaxed">
+            {lang.vision?.paragraph}
+          </p>
         </div>
 
         {/* Image with diagonal clip-path */}
