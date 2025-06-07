@@ -33,7 +33,7 @@
     "message": "Message",
     "selectService": "-- Select a Service --",
     "submit": "Submit",
-    "phoneNumber":"+966505837832",
+    "phoneNumber": "+966505837832",
     "languageToggle": "العربية"
   },
   "services": [
@@ -301,9 +301,9 @@
         "title": "About Our CEO",
         "name": "Fahad A Alqahtani",
         "paragraphs": [
-          "Fahad A Alqahtani is the visionary leader behind FORGE. With over two decades of expertise in civil engineering, infrastructure development, and multidisciplinary project execution, he has cultivated a culture of integrity, precision, and excellence across all company operations.",
-          "His leadership philosophy centers around client trust, team empowerment, and continuous improvement. Under his guidance, the company has expanded its capabilities across multiple verticals, gained the trust of leading clients, and delivered iconic projects that reflect both technical excellence and human-centered design.",
-          "Through a clear vision and strategic planning, he continues to lead the company toward growth, innovation, and operational excellence, setting new benchmarks in quality and customer satisfaction."
+          "Fahad Al-Qahtani is the inspiring leader behind Forge Corporation. With over twenty years of experience in advanced management, he has developed exceptional skills in team leadership, strategic planning, and overseeing multidisciplinary projects. He has established a culture rooted in integrity, precision, and excellence across all aspects of the company’s operations.",
+          "His leadership philosophy centers on building client trust, empowering teams through continuous training and support, and striving for ongoing improvement in processes. Under his guidance, the company has expanded its capabilities to manage complex construction projects, earning the trust of prominent clients and successfully executing pioneering projects that reflect high quality and human-centered design.",
+          "With a clear vision and strategic planning, Fahad continues to steer the company toward growth and innovation, setting new benchmarks in resource management, operational performance, and client satisfaction, thereby ensuring the organization’s sustained success and prominence in the construction industry."
         ]
       }
     }
