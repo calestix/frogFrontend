@@ -29,10 +29,6 @@ function Blog() {
 
   return (
     <>
-     <head>
-        <title>Blog - FORGE Trading and Construction</title>
-        <meta name="description" content="Latest news and articles about construction and repair services by Forge." />
-      </head>
       <Navbar />
       <div className="min-h-screen py-20 md:px-20 px-8">
         <div className="flex justify-center mb-8">
@@ -68,7 +64,7 @@ function Blog() {
                   </h4>
                  <button
                   className="mainButton"
-                  onClick={() => navigate.push(`/blog/view/${item?._id}`)}
+                  onClick={() => navigate.push(`/blog/${item?._id}`)}
                 >
                   View Blog
                 </button>

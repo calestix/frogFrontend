@@ -1,6 +1,47 @@
-import ClientLayout from "./ClientLayout";
+// app/layout.tsx
 import "./globals.css";
 import { AuthProvider } from "./context/auth.context";
+import ClientLayout from "./ClientLayout";
+
+export const metadata = {
+  title: "Forge",
+  description:
+    "FORGE Trading and Construction - Saudi Arabia's trusted construction & repair services partner.",
+  keywords: [
+    "Forge",
+    "construction",
+    "Saudi Arabia",
+    "welding",
+    "tank repair",
+    "building",
+    "maintenance",
+    "infrastructure",
+    "trading",
+  ],
+  authors: [{ name: "FORGE T&C EST" }],
+  openGraph: {
+    title: "FORGE Trading and Construction",
+    description:
+      "Explore our full-service construction and metal repair expertise in Saudi Arabia.",
+    url: "https://forgetradingandconstruction.com/",
+    images: [
+      {
+        url: "https://forgetradingandconstruction.com/images/logo.png",
+        width: 800,
+        height: 600,
+        alt: "Forge Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "FORGE Trading and Construction",
+    description:
+      "Explore our full-service construction and metal repair expertise in Saudi Arabia.",
+    images: ["https://forgetradingandconstruction.com/images/logo.png"],
+  },
+  metadataBase: new URL("https://forgetradingandconstruction.com"),
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -9,46 +50,11 @@ export default function RootLayout({ children }) {
         <link
           href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&display=swap"
           rel="stylesheet"
-        ></link>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-          rel="stylesheet"
-        />
-        {/* Google Fonts */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&display=swap"
-          rel="stylesheet"
         />
         <link
           href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
           rel="stylesheet"
         />
-
-        <meta
-          name="description"
-          content="FORGE Trading and Construction - Saudi Arabia's trusted construction & repair services partner."
-        />
-        <meta
-          name="keywords"
-          content="Forge, construction, Saudi Arabia, welding, tank repair, building, maintenance, infrastructure, trading"
-        />
-        <meta name="author" content="FORGE T&C EST" />
-        <meta property="og:title" content="FORGE Trading and Construction" />
-        <meta
-          property="og:description"
-          content="Explore our full-service construction and metal repair expertise in Saudi Arabia."
-        />
-        <meta
-          property="og:image"
-          content="https://forgetradingandconstruction.com/images/logo.png"
-        />
-        <meta
-          property="og:url"
-          content="https://forgetradingandconstruction.com/"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-        <title>Forge</title>
-        {/* Organization Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

@@ -1,10 +1,11 @@
 "use client";
 import { useParams, useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
-import { apiCall } from "../../../utils/ApiCall";
+import { apiCall } from "../../utils/ApiCall";
 import { motion } from "framer-motion";
 import Navbar from "@/src/app/component/navbar/nav";
 import Footer from "@/src/app/component/footer/footer";
+import Head from "next/head";
 function Page() {
   const navigate = useRouter();
   const { id } = useParams();
@@ -23,10 +24,12 @@ function Page() {
 
   return (
     <>
-    <head>
+     <Head>
         <title>{data?.title} - FORGE Blog</title>
         <meta name="description" content={data?.title} />
-      </head>
+        <meta property="og:title" content={data?.title} />
+        <meta property="og:description" content={data?.description} />
+      </Head>
     <Navbar/>
     <div className="mt-20 blog-details">
       <motion.div
@@ -35,7 +38,6 @@ function Page() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-
         {/* Title */}
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
           {data?.title}
@@ -50,13 +52,6 @@ function Page() {
             className="object-cover"
           />
         </div>
-
-        
-
-        {/* Date */}
-        {/* <p className="text-sm text-gray-500">
-          Published on {format(new Date(data?.createdAt), "MMMM dd, yyyy")}
-        </p> */}
 
         {/* Tags */}
         <div className="flex flex-wrap gap-2">

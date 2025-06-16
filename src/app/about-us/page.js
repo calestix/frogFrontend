@@ -5,24 +5,14 @@ import Footer from "../component/footer/footer";
 import { useLanguage } from "../context/LanguageContext";
 import { getDictionary } from "../lib/dictionary";
 
+
+
 export default function AboutUs() {
   const { locale } = useLanguage();
   const dict = getDictionary(locale);
   const content = dict.aboutpage;
   return (
     <>
-      <head>
-        <title>About Us - FORGE Trading and Construction</title>
-        <meta
-          name="description"
-          content="Learn about Forge Trading and Construction, a leading construction company in Saudi Arabia."
-        />
-        <meta property="og:title" content="About Us - FORGE" />
-        <meta
-          property="og:description"
-          content="Trusted construction and repair services in Saudi Arabia."
-        />
-      </head>
       <Navbar />
       <section className={`text-black py-20 mt-10 px-6 md:px-20`}>
         <div className="max-w-6xl mx-auto space-y-12">

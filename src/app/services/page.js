@@ -14,23 +14,7 @@ export default function Services() {
   const text = dict;
   return (
     <>
-      <head>
-        <title>Our Services - FORGE</title>
-        <meta
-          name="description"
-          content="Explore our range of construction and repair services across Saudi Arabia."
-        />
-        <meta property="og:title" content="Our Services - FORGE" />
-        <meta
-          property="og:description"
-          content="Top welding and building services."
-        />
-        <meta
-          property="og:image"
-          content="https://forgetradingandconstruction.com/images/banner.jpg"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-      </head>
+
       <Navbar />
       <div className="py-20 px-6 md:px-20 text-white">
         <h1 className="text-4xl text-black font-bold text-center mb-12 mt-6">
