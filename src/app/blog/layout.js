@@ -1,9 +1,9 @@
 
 export const metadata={
-  title:"Blog - FORGE Trading and Construction",
+  title:"Blog - Forgetc",
   description:"Latest news and articles about construction and repair services by Forge.",
    openGraph: {
-    title:"Blog - FORGE Trading and Construction",
+    title:"Blog - Forgetc",
     description:"Trusted construction and repair services in Saudi Arabia"
    }
 }

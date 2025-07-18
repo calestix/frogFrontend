@@ -45,7 +45,7 @@ function Blog() {
               {/* Image with overlay */}
               <div className="relative h-64 overflow-hidden">
                 <img
-                  src={`https://forgetradingandconstruction.com/api/api/assets/get-asset?path=${encodeURIComponent(
+                  src={`https://forgetc.com/api/api/assets/get-asset?path=${encodeURIComponent(
                     item?.bannerImg
                   )}`}
                   alt={item?.title}

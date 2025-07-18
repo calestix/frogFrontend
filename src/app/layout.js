@@ -6,7 +6,7 @@ import ClientLayout from "./ClientLayout";
 export const metadata = {
   title: "Forge",
   description:
-    "FORGE Trading and Construction - Saudi Arabia's trusted construction & repair services partner.",
+    "Forgetc - Saudi Arabia's trusted construction & repair services partner.",
   keywords: [
     "Forge",
     "construction",
@@ -20,13 +20,13 @@ export const metadata = {
   ],
   authors: [{ name: "FORGE T&C EST" }],
   openGraph: {
-    title: "FORGE Trading and Construction",
+    title: "Forgetc",
     description:
       "Explore our full-service construction and metal repair expertise in Saudi Arabia.",
-    url: "https://forgetradingandconstruction.com/",
+    url: "https://forgetc.com/",
     images: [
       {
-        url: "https://forgetradingandconstruction.com/images/logo.png",
+        url: "https://forgetc.com/images/logo.png",
         width: 800,
         height: 600,
         alt: "Forge Logo",
@@ -35,12 +35,12 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FORGE Trading and Construction",
+    title: "Forgetc",
     description:
       "Explore our full-service construction and metal repair expertise in Saudi Arabia.",
-    images: ["https://forgetradingandconstruction.com/images/logo.png"],
+    images: ["https://forgetc.com/images/logo.png"],
   },
-  metadataBase: new URL("https://forgetradingandconstruction.com"),
+  metadataBase: new URL("https://forgetc.com"),
 };
 
 export default function RootLayout({ children }) {
@@ -61,9 +61,9 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "Forge Trading and Construction",
-              url: "https://forgetradingandconstruction.com/",
-              logo: "https://forgetradingandconstruction.com/images/logo.png",
+              name: "Forgetc",
+              url: "https://forgetc.com/",
+              logo: "https://forgetc.com/images/logo.png",
               sameAs: [
                 "https://www.facebook.com/profile.php?id=61577260822002",
                 "https://x.com/forgeats3",

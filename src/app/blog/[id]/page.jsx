@@ -45,7 +45,7 @@ function Page() {
         {/* Banner */}
         <div className="relative w-full h-64 md:h-96 overflow-hidden rounded-xl">
           <img
-            src={`https://forgetradingandconstruction.com/api/api/assets/get-asset?path=${encodeURIComponent(
+            src={`https://forgetc.com/api/api/assets/get-asset?path=${encodeURIComponent(
               data?.bannerImg
             )}`}
             alt={data?.title}

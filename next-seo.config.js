@@ -1,27 +1,27 @@
 // next-seo.config.js
 
 const SEO = {
-  title: "Forge Trading and Construction",
-  titleTemplate: "%s | Forge Trading and Construction",
-  defaultTitle: "Forge Trading and Construction",
+  title: "Forgetc",
+  titleTemplate: "%s | Forgetc",
+  defaultTitle: "Forgetc",
   description:
-    "Forge Trading and Construction is a Saudi Arabia-based company offering expert services in construction, metal repair, welding, and civil engineering. Trusted by clients across the Kingdom.",
-  canonical: "https://forgetradingandconstruction.com/",
+    "Forgetc is a Saudi Arabia-based company offering expert services in construction, metal repair, welding, and civil engineering. Trusted by clients across the Kingdom.",
+  canonical: "https://forgetc.com/",
   openGraph: {
     type: "website",
-    url: "https://forgetradingandconstruction.com/",
-    title: "Forge Trading and Construction",
+    url: "https://forgetc.com/",
+    title: "Forgetc",
     description:
-      "Professional construction, welding, and repair services in Saudi Arabia. Residential, commercial, and government projects by Forge Trading and Construction.",
+      "Professional construction, welding, and repair services in Saudi Arabia. Residential, commercial, and government projects by Forgetc.",
     images: [
       {
-        url: "https://forgetradingandconstruction.com/images/og-image.jpg",
+        url: "https://forgetc.com/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Forge Trading and Construction - Saudi Arabia",
+        alt: "Forgetc - Saudi Arabia",
       },
     ],
-    siteName: "Forge Trading and Construction",
+    siteName: "Forgetc",
     profile: {
       firstName: "Forge",
       lastName: "Construction",
@@ -40,7 +40,7 @@ const SEO = {
     },
     {
       name: "author",
-      content: "Forge Trading and Construction",
+      content: "Forgetc",
     },
   ],
   additionalLinkTags: [

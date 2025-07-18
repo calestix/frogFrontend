@@ -3,7 +3,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 const axiosInstance = axios.create({
-  baseURL: "https://forgetradingandconstruction.com/api/api",
+  baseURL: "https://forgetc.com/api/api",
   headers: {
     "Content-Type": "application/json",
   },
@@ -61,6 +61,6 @@ axiosInstance.interceptors.response.use(
 
 export default axiosInstance;
 
-// baseURL: "https://forgetradingandconstruction.com/api",
+// baseURL: "https://forgetc.com/api",
 // baseURL: "http://localhost:4005/api",
 // Create instance

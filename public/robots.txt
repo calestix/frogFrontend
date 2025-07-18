@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://forgetradingandconstruction.com/sitemap.xml
+Sitemap: https://forgetc.com/sitemap.xml
