@@ -46,7 +46,7 @@ function Vision() {
       {/* Vision Section */}
       <div className="grid md:grid-cols-2 gap-10 items-center md:flex-row-reverse">
         {/* Text */}
-        <div className="text-left">
+        <div className="">
           <h3 className="text-4xl heading">{lang.vision?.title}</h3>
           <p className="mt-6 text-gray-700 text-lg leading-relaxed">
             {lang.vision?.paragraph}

@@ -13,6 +13,8 @@
     "resources": "Resources",
     "privacy_policy": "Privacy Policy",
     "terms_and_conditions": "Terms And Conditions",
+    "contracting":"Contracting",
+    "trading":"Trading",
     "services": "Services",
     "contact_us": "Contact Us",
     "about_us": "About Us",
@@ -307,5 +309,364 @@
         ]
       }
     }
-  ]
+  ],
+  "trading": {
+    "hero_section": {
+      "title": "MATERIAL TRADING",
+      "description": "We are the leading stockists and suppliers of Industrial & Construction Material in the Kingdom of Saudi Arabia. Our extensive network offers a wide range of tools, hardware, engineering goods, and safety solutions."
+    },
+    "introduction": {
+      "description": [
+        "Our network in material trading includes a vast array of Hand & Power Tools, Hardware, Engineering goods, Mechanical, Electrical, Instrumental, Lifting, Hydraulic, Industrial chemicals, Lubricants, and Building materials from various brands.",
+        "We also supply advanced safety and security solutions, including CCTV, GPS Systems, PWAS Systems, Burglar Alarm Systems, Emergency EVAC, Office Security Systems, and Security Patrol Monitoring Systems."
+      ]
+    },
+    "hand_power_tools": {
+      "title": "Hand & Power Tools",
+      "image": "/trading/img5.jpg",
+      "description": [
+        "Our range of essential hand and power tools ensures safe and efficient maintenance operations. Tools include Adjustable Spanner Wrenches, Roller Clutch & C-Clamps, Crimper, Bender & Formers, Manual Fastener Removal Tools, Nut & Screwdrivers, Magnetizers & Demagnetizers, Hydraulic Rescue Kits, T-Torque Wrenches, Valve Wheel Wrenches, Heavy Duty Wide Roll & Hinged Pipe Cutters, Pliers, Pullers & Separators, Scissors, Shears & Snips, Double Handle, Crank Handle & Mechanical Ratchet, and Sockets from Point Shallow to Deep & Turbo Impact.",
+        "We also provide Angle & Bench Grinders, Chisels, Chop-saws & Jigsaws, Circular Saws, Miter Saws, Asphalt Blades, Reciprocating Saws, Magnetic Drills, Diamond Core Drills, Rotary & Percussion Drills, Non-Sparking Brass Sledge, and Rotary & Demolition Hammers."
+      ]
+    },
+    "categories": [
+      {
+        "title": "MECHANICAL",
+        "img": "/trading/cimg1.jpg",
+        "items": [
+          "Pipes/Tubes",
+          "Fittings & Fasteners",
+          "Flanges",
+          "Valves",
+          "Welding Accessories",
+          "GRP & HDPE PFP",
+          "Structural Steels",
+          "Structural Gratings",
+          "Metal Sheets"
+        ]
+      },
+      {
+        "title": "INSTRUMENT & CONTROL",
+        "img": "/trading/cimg2.jpg",
+        "items": [
+          "Solenoid Valves",
+          "Instrumentation Valves",
+          "Process control Valves",
+          "Positioners & Actuators",
+          "Calibration Equipment’s",
+          "Flow Gauges & Level Gauges",
+          "Process controllers",
+          "Indicators & Recorders"
+        ]
+      },
+      {
+        "title": "ELECTRICAL",
+        "img": "/trading/cimg3.jpg",
+        "items": [
+          "Switches & Sockets",
+          "Plugs & Boxes",
+          "Wiring Devices",
+          "Panel Boards",
+          "Cable Lugs & Tools",
+          "Transformers",
+          "PVC Conduit Fittings",
+          "Electrical wire",
+          "Telephone Cable",
+          "EMT Rigid & Conduits Fittings",
+          "Industrial ventilating Fans",
+          "UPS Systems",
+          "Solar power systems"
+        ]
+      },
+      {
+        "title": "HVAC",
+        "img": "/trading/cimg4.jpg",
+        "items": [
+          "Duct Board",
+          "Duct Wrap",
+          "Mineral Wool",
+          "Wired & Ceramic Blankets",
+          "PIR Insulation Board",
+          "Woven Fire blankets",
+          "Fire & Smoke Damper",
+          "Hydro Testing Equipment’s"
+        ]
+      },
+      {
+        "title": "SAFETY",
+        "img": "/trading/cimg5.jpg",
+        "items": [
+          "Personnel Protective Equipment's",
+          "FRC – Fire Resistant Clothing's",
+          "Breathing Equipment’s",
+          "Emergency Response Equipment’s",
+          "Fire protection Equipment’s",
+          "Fire Extinguishers",
+          "Safety Monitoring Systems",
+          "Security & Safety Solutions"
+        ]
+      },
+      {
+        "title": "RIGGING LIFTING",
+        "img": "/trading/cimg6.jpg",
+        "items": [
+          "Wire rope accessories",
+          "Snatch block & Sheave Blocks",
+          "Crane pulley",
+          "Hooks & Shackle",
+          "Ratchet strap & Load binders",
+          "Turnbuckles & Rigging Screws",
+          "Master Rings & Fittings",
+          "Load Suspension Eyes etc."
+        ]
+      },
+      {
+        "title": "BUILDING MATERIALS",
+        "img": "/trading/cimg7.jpg",
+        "items": [
+          "Corrugated Sheets",
+          "Gratings & Handrails",
+          "Checkered",
+          "Binding Wires",
+          "Pipe Supports",
+          "Wire Mesh",
+          "Cordless Tools",
+          "Steel Angles",
+          "Deformed Steel Bars",
+          "Steel Clamps",
+          "Anchors & Fasteners",
+          "Angle Grinders",
+          "Chop-saw & Jigsaws",
+          "Circular Saws",
+          "Miter Saws",
+          "Asphalt Blades",
+          "Reciprocating Saws",
+          "Magnetic drills",
+          "Diamond Core Drills",
+          "Rotary & Percussion Drills",
+          "Rotary & Demolition Hammers"
+        ]
+      },
+      {
+        "title": "SOIL MATERIALS",
+        "img": "/trading/cimg8.jpg",
+        "items": [
+          "Normal Sand",
+          "Clean Sand",
+          "Gravel (All Sizes)",
+          "Marl",
+          "Base Course",
+          "Sub Base",
+          "Select Fill"
+        ]
+      },
+      {
+        "title": "WOOD MATERIALS",
+        "img": "/trading/cimg9.jpg",
+        "items": [
+          "Beach Wood",
+          "Board Ply",
+          "MDF Ply",
+          "Plywood",
+          "Joinery Timber",
+          "Polystyrene",
+          "Bitumen Board"
+        ]
+      }
+    ],
+    "pipes_forged_bars": {
+      "title": "Pipes & Forged Bars",
+      "image": "/trading/pulmbering.jpg",
+      "materials": [
+        "Stainless Steel",
+        "Special Steel",
+        "Super Alloys",
+        "Nickel Alloys",
+        "Alloy Steels",
+        "MS Steels"
+      ],
+      "range": "All Sizes in Sch 5 - 40, Std, 60-80 XS, 100, 120, 140, 160 & XXS as Per NACE MR 01 75",
+      "form": ["Round", "Square", "Rectangular", "Hydraulic"],
+      "type": ["Seamless", "ERW", "Welded", "Fabricated"],
+      "fittings": "Elbow B/W & SW Reducer-ECC/CON TEE Equal & Unequal BW/SW Stub end - Short Neck & Long Neck SORF, WNRF, SWRF & All Type",
+      "fitting_materials": [
+        "Stainless Steel",
+        "Carbon Steel",
+        "Alloy Steel",
+        "Duplex Steel",
+        "Nickel Alloy"
+      ],
+      "fitting_size": "½ to 24 Inch (SCH: 10S – 160)"
+    },
+    "flanges": {
+      "title": "Flanges",
+      "image": "/trading/Flanges.jpg",
+      "description": "Weld Neck, Slip On, Lap Joint, Socket Weld, Blind, Spectacle Blind, Paddle Blind, Reducing, Spacer, Expander, Adapter Split, Studding Outlets, Threaded & Orifice",
+      "materials": [
+        "Stainless Steel",
+        "Special Steel",
+        "Super Alloys",
+        "Nickel Alloys",
+        "Alloy Steels",
+        "MS Steels"
+      ]
+    },
+    "valves": {
+      "title": "Valves",
+      "image": "/trading/Valve.jpg",
+      "types": [
+        "Ball Valves",
+        "Gate Valves",
+        "Globe Valves",
+        "Check Valves",
+        "Plug Valves",
+        "Butterfly Valves"
+      ],
+      "materials": ["Carbon Steel", "Stainless Steel (150LB ~600LB, 2” ~48”)"
+      ]
+    },
+    "fasteners_fittings": {
+      "title": "Fasteners & Fittings",
+      "image": "/trading/FASTNERs.jpg",
+      "bolts_screws": [
+        "Hex Bolts and Screws",
+        "Bent Bolts and Screws",
+        "Cap Bolts and Screws",
+        "12-Point Bolts and Screws",
+        "Shoulder Bolts and Screw",
+        "Oval Neck Bolts and Screws"
+      ],
+      "nuts_washers": [
+        "Cap Nuts",
+        "Hex & Square Nuts",
+        "12-Point Nuts",
+        "Flat Washers",
+        "Lock Washers",
+        "Beveled Washers"
+      ],
+      "materials": [
+        "Stainless Steel",
+        "Alloy Steels",
+        "Aluminum Alloys",
+        "Carbon Steels",
+        "Super Alloys",
+        "Copper Alloys",
+        "Titanium Stainless Steels",
+        "Tool Steels"
+      ]
+    },
+    "oil_storage_material_handling": {
+      "title": "Oil Storage & Material Handling",
+      "image": "/trading/oil.jpg",
+      "items": [
+        {
+          "title": "Grinding Balls | Grinding Cylpebs | Ball Mill Liner | SAG Mill Liner | AG Mill Liner | Rod Mill Liner",
+          "image": "/trading/ball.jpg"
+        },
+        {
+          "title": "Jaw Crusher Parts | Cone Crusher Parts | Impact Crusher Parts | Hammer Crusher Parts",
+          "image": "/trading/jaw.jpg"
+        },
+        {
+          "title": "Cement, Copper & Gold Mine Grinding Use",
+          "description": "High Chrome, Steel & Alloy Ball Casting Crusher Manganese and High Chrome Shredder",
+          "image": "/trading/Cement.jpg"
+        },
+        {
+          "title": "Wind-Solar Intelligent Street Light Monitoring Equipment (Traffic & Security Usage)",
+          "description": "High Efficiency / Performance Portable & Flexible",
+          "image": "/trading/solar.jpg"
+        },
+        {
+          "title": "Construction Safety Uniforms",
+          "description": "100% Cotton Fire Retardant Garment, GSM: 220 to 350 - Made in Pakistan",
+          "image": "/trading/uniform.jpg"
+        },
+        {
+          "title": "Safety Gloves",
+          "description": [
+            "100% Pure Shoulder Split Cowhide Leather",
+            "100% Pure Goat Leather for Reinforced Palms",
+            "Cotton Lined Palm Extra Comfort",
+            "Grade: A/AB",
+            "Size: S to XXXL",
+            "Leather Made in Pakistan"
+          ],
+          "image": "/trading/gloves.jpg"
+        }
+      ]
+    },
+    "manpower_solutions": {
+      "title": "MANPOWER SOLUTIONS",
+      "image": "/trading/en.jpg",
+      "candidate_evaluation_criteria": [
+        "Behavioral Interviews",
+        "Training Sessions",
+        "Reference Checking",
+        "Legal Status",
+        "Exact Documentation"
+      ],
+      "description": "Our manpower consists of a diverse team of engineering professionals from around the world, well-trained and dedicated to providing services across various industries.",
+      "roles": [
+        [
+          "Project Assistants",
+          "Administrative Assistant",
+          "Document Controllers",
+          "Material Controllers",
+          "Rigging Supervisors",
+          "Rigger Level I/II/III",
+          "Scaffolding Supervisors",
+          "Quantity Surveyors"
+        ],
+        [
+          "Planning Engineers",
+          "Pipeline Engineers",
+          "Instrument Engineers",
+          "Electrical Engineers",
+          "SCADA/Telecom Engineers",
+          "Rotating/Static Equipment Engineers",
+          "Corrosion/Commissioning Engineers",
+          "Process Engineer"
+        ],
+        [
+          "Cost Control Engineers",
+          "Estimation Engineers",
+          "QA/QC Engineer",
+          "QA/QC Inspectors",
+          "PDMS Designers",
+          "CAD Draughtsman",
+          "Loss Prevention Engineer",
+          "Fire & Safety Engineers",
+          "HSE Supervisor/Officer"
+        ],
+        [
+          "Technicians",
+          "Electricians",
+          "Mechanics",
+          "Permit Receivers",
+          "Fire Watch",
+          "Specialized Scaffolders",
+          "Asphalt Workers"
+        ],
+        [
+          "Shuttering",
+          "Pipe Fitters",
+          "Painters",
+          "Sand Blasters",
+          "Steel Fixers",
+          "Steel Fabricators",
+          "Masons"
+        ],
+        [
+          "Iron Workers",
+          "Welders",
+          "Finishing Carpenters",
+          "Drivers",
+          "Office Boy",
+          "Skilled Helpers"
+        ]
+      ]
+    },
+    "contact_us": "Contact Us"
+  }
 }

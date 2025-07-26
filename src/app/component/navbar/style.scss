@@ -8,7 +8,9 @@ header {
   color: #7c3aed; /* Purple-700 */
   font-weight: 700;
 }
-
+.group:hover .group-hover\:block {
+  display: block;
+}
 .active-nav-item::after {
   content: "";
   position: absolute;

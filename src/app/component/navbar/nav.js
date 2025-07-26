@@ -16,7 +16,16 @@ export default function Navbar() {
   const navItems = [
     { href: "/", label: { en: "Home", ar: "الرئيسية" } },
     { href: "/about-us", label: { en: "About Us", ar: "معلومات عنا" } },
-    { href: "/services", label: { en: "Services", ar: "خدمات" } },
+    {
+      label: { en: "Services", ar: "خدمات" },
+      children: [
+        {
+          href: "/services/contracting",
+          label: { en: "Contracting", ar: "مقاولات" },
+        },
+        { href: "/services/trading", label: { en: "Trading", ar: "تجارة" } },
+      ],
+    },
     { href: "/contact-us", label: { en: "Contact Us", ar: "اتصل بنا" } },
     { href: "/blog", label: { en: "Blog", ar: "مدونة" } },
   ];
@@ -31,7 +40,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="bg-white border-b border-gray-300 z-99 w-full fixed top-0">
+    <header className="bg-white border-b border-gray-300 z-50 w-full fixed top-0">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-3">
         <Link
           href="/"
@@ -41,28 +50,55 @@ export default function Navbar() {
           <Image src={logo} alt="Logo" className="h-10 w-auto cursor-pointer" />
         </Link>
 
-        <nav className="hidden md:flex gap-6 text-gray-700 font-medium">
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={
-                pathname === item.href
-                  ? "active-nav-item"
-                  : "hover:text-black duration-200"
-              }
-            >
-              {item.label[locale]}
-            </Link>
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex gap-6 text-gray-700 font-medium relative">
+          {navItems.map((item, index) => (
+            <div key={index} className="relative">
+              {item.children ? (
+                <>
+                  <button
+                    type="button"
+                    className="peer hover:text-black duration-200"
+                  >
+                    {item.label[locale]}
+                  </button>
+                  <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded invisible opacity-0 peer-hover:visible peer-hover:opacity-100 hover:visible hover:opacity-100 transition-all z-50">
+                    {item.children.map((subItem) => (
+                      <Link
+                        key={subItem.href}
+                        href={subItem.href}
+                        className={`block px-4 py-2 hover:bg-gray-100 ${
+                          pathname === subItem.href ? "bg-gray-200" : ""
+                        }`}
+                      >
+                        {subItem.label[locale]}
+                      </Link>
+                    ))}
+                  </div>
+                </>
+              ) : (
+                <Link
+                  href={item.href}
+                  className={
+                    pathname === item.href
+                      ? "active-nav-item"
+                      : "hover:text-black duration-200"
+                  }
+                >
+                  {item.label[locale]}
+                </Link>
+              )}
+            </div>
           ))}
         </nav>
 
+        {/* Language Select + Mobile Menu Button */}
         <div className="flex items-center">
           <select
             aria-label="Select Language"
             value={locale}
             onChange={handleLanguageChange}
-            className="border px-3 py-1 rounded bg-green-700  cursor-pointer"
+            className="border px-3 py-1 rounded bg-green-700 text-white cursor-pointer"
           >
             <option value="en">EN</option>
             <option value="ar">عربي</option>
@@ -91,25 +127,51 @@ export default function Navbar() {
         </div>
       </div>
 
+      {/* Mobile Menu */}
       <div
         className={`fixed top-0 right-0 h-full w-0 overflow-hidden bg-blue-950 text-white shadow-lg transition-width duration-300 ease-in-out md:hidden z-40 ${
           mobileMenuOpen ? "w-[300px]" : "w-0"
         }`}
       >
-        <nav className="flex flex-col mt-16 space-y-2 text-lg font-semibold">
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              onClick={() => setMobileMenuOpen(false)}
-              className={`py-2 px-3 ${
-                pathname === item.href
-                  ? "bg-white bg-opacity-30 text-black"
-                  : "hover:bg-white hover:text-black hover:bg-opacity-20 transition-colors duration-200"
-              }`}
-            >
-              {item.label[locale]}
-            </Link>
+        <nav className="flex flex-col mt-16 space-y-2 text-lg font-semibold px-4">
+          {navItems.map((item, index) => (
+            <div key={index}>
+              {item.children ? (
+                <details className="group">
+                  <summary className="cursor-pointer py-2 px-3 hover:bg-white hover:text-black hover:bg-opacity-20">
+                    {item.label[locale]}
+                  </summary>
+                  <div className="pl-4">
+                    {item.children.map((subItem) => (
+                      <Link
+                        key={subItem.href}
+                        href={subItem.href}
+                        onClick={() => setMobileMenuOpen(false)}
+                        className={`block py-2 px-3 ${
+                          pathname === subItem.href
+                            ? "bg-white bg-opacity-30 text-black"
+                            : "hover:bg-white hover:text-black hover:bg-opacity-20 transition-colors duration-200"
+                        }`}
+                      >
+                        {subItem.label[locale]}
+                      </Link>
+                    ))}
+                  </div>
+                </details>
+              ) : (
+                <Link
+                  href={item.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`py-2 px-3 ${
+                    pathname === item.href
+                      ? "bg-white bg-opacity-30 text-black"
+                      : "hover:bg-white hover:text-black hover:bg-opacity-20 transition-colors duration-200"
+                  }`}
+                >
+                  {item.label[locale]}
+                </Link>
+              )}
+            </div>
           ))}
         </nav>
       </div>
