@@ -133,7 +133,7 @@ export default function Navbar() {
           mobileMenuOpen ? "w-[300px]" : "w-0"
         }`}
       >
-        <nav className="flex flex-col mt-16 space-y-2 text-lg font-semibold px-4">
+        <nav className="flex flex-col mt-16 space-y-2 text-lg font-semibold">
           {navItems.map((item, index) => (
             <div key={index}>
               {item.children ? (
@@ -164,8 +164,8 @@ export default function Navbar() {
                   onClick={() => setMobileMenuOpen(false)}
                   className={`py-2 px-3 ${
                     pathname === item.href
-                      ? "bg-white bg-opacity-30 text-black"
-                      : "hover:bg-white hover:text-black hover:bg-opacity-20 transition-colors duration-200"
+                      ? "bg-white bg-opacity-30 text-black w-full block"
+                      : "hover:bg-white w-full block hover:text-black hover:bg-opacity-20 transition-colors duration-200"
                   }`}
                 >
                   {item.label[locale]}
