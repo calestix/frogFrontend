@@ -4,6 +4,7 @@ import Navbar from "../component/navbar/nav";
 import Footer from "../component/footer/footer";
 import { useLanguage } from "../context/LanguageContext";
 import { getDictionary } from "../lib/dictionary";
+import { useState } from "react";
 
 
 
@@ -11,6 +12,7 @@ export default function AboutUs() {
   const { locale } = useLanguage();
   const dict = getDictionary(locale);
   const content = dict.aboutpage;
+  const [openPDF, setOpenPDF] = useState(false);
   return (
     <>
       <Navbar />
@@ -93,7 +95,36 @@ export default function AboutUs() {
             </div>
           </div>
         </div>
-      </section>
+        
+<section className="text-black py-20 px-6 md:px-20">
+  <div className="max-w-6xl mx-auto space-y-8">
+    <h2 className="text-3xl font-bold mb-6 text-center">{content[0].certificate.certificates}</h2>
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {/* Card */}
+      <a
+        href="/certificate1.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block bg-white border border-gray-200 rounded-xl shadow hover:shadow-xl transition-all duration-300 overflow-hidden"
+      >
+        <img
+          src="/certificate1.png"
+          alt="certificate preview"
+          className="w-full h-48 object-cover object-top"
+        />
+        <div className="p-4">
+          <h4 className="text-lg font-semibold">{content[0].certificate.vat}</h4>
+          <p className="text-gray-600 text-sm mt-1">{content[0].certificate.view}</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+      </section>  
       <Footer />
     </>
   );
