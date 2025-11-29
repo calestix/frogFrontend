@@ -72,7 +72,7 @@ function OurServices() {
         {text?.data?.map((item, index) => (
           <div
             key={index}
-            onClick={()=>navigate.push("/services")}
+            onClick={()=>navigate.push("/services/contracting")}
             className="bg-white cursor-pointer shadow-lg rounded-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl group"
           >
             <div className="w-full h-48 relative">
