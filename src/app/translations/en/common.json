@@ -311,7 +311,10 @@
       "certificate":{
         "certificates":"Certificates",
         "vat":"VAT Registration Certificate issued by ZATCA.",
-        "view":"Click to view full Certificate"
+        "view":"Click to view full Certificate",
+        "c4":"Commercial registration certificate",
+        "c3":"Social Insurance (GOSI) Certificate",
+        "c2":"Zakat, Tax and Customs Authority"
       }
     }
   ],
