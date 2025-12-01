@@ -74,10 +74,10 @@ export default function AboutUs() {
           <div className={`flex flex-col md:flex-row gap-10 items-center`}>
             <div className="flex-1">
               <Image
-                src="/ceoimg.jpg"
+                src="/ceoimg1.jpg"
                 alt="CEO"
-                width={400}
-                height={400}
+                width={500}
+                height={500}
                 className="rounded-full object-cover shadow-md w-64 h-64 mx-auto md:mx-0"
               />
             </div>
